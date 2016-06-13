@@ -13,22 +13,49 @@
     <![endif]-->
 </head>
 <body>
-    <header class="sec--head">
-        <div class="sec--head__inner">
-            <h1>LIBSASSERPLATE</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Link 01</a>
-                    </li>
-                    <li>
-                        <a href="#">Link 02</a>
-                    </li>
-                    <li>
-                        <a href="#">Link 03</a>
-                    </li>
-                </ul>
-            </nav>
+    <header class="header">
+        <div class="inner">
+            <div class="header-top">
+                <figure class="img--inner header__logo">
+                    <a class="header__logo--img" href="#"><img src="static/img/logo.png" alt="logo"></a>
+                </figure>
+                <div class="header__contact">
+                    <p class="header__contact--number">+9978 8856 999</p>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="header__menu__item">
+                            <a class="header__menu__item--a" href="#">Home</a>
+                        </li>
+                        <li class="header__menu__item">
+                            <a class="header__menu__item--a" href="#">About Us</a>
+                        </li>
+                        <li class="header__menu__item">
+                            <a class="header__menu__item--a" href="#">Services</a>
+                        </li>
+                        <li class="header__menu__item">
+                            <a class="header__menu__item--a" href="#">News</a>
+                        </li>
+                        <li class="header__menu__item">
+                            <a class="header__menu__item--a" href="#">Blog</a>
+                        </li>
+                        <li class="header__menu__item">
+                            <a class="header__menu__item--a" href="#">Pages</a>
+                        </li>
+                        <li class="header__menu__item">
+                            <a class="header__menu__item--a" href="#">Cotact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__bottom">
+                <div class="header__bottom__content">
+                    <p class="header__bottom__content--introduction">Welcome To</p>
+                    <h1 class="header__bottom__content--title">Business Plus</h1>
+                    <p class="header__bottom__content--text">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                </div>
+                <button class="btn btn--read"><span>Read More</span></button>
+            </div>
         </div>
     </header>
     <main class="sec--main">
@@ -78,7 +105,7 @@
                         </div>
                         <label class="form-contact--label" for="form-contact--message">Comment <span>*</span></label>
                         <textarea name="form-contact-message" class="form-contact--message"></textarea>
-                        <button type="submit" class="btn--submit"><span>Submit Now</span></button>
+                        <button type="submit" class="btn btn--submit"><span>Submit Now</span></button>
                     </form>
                 </li>
             </ul>

@@ -55,6 +55,9 @@
 	&__item{
 		&:before{
 			content: '\e808';
+			font-family: "fontello";
+    		font-style: normal;
+    		font-weight: normal;
 			color: $color_gold;
 		}
 		&--a{

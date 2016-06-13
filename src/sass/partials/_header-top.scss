@@ -1,0 +1,77 @@
+.header{
+	height: 836px;
+	//height: 100vh;
+   	background: url(../img/Header1.jpg) 50% 100% no-repeat;
+    background-size: cover;
+    >.inner{
+		padding: 0 15px;
+    }
+	&-top{
+		display: flex;
+		align-items: center;
+		height: 98px;
+		&:after{
+			position: absolute;
+		    content: '';
+		    width: 100%;
+		    height: 1px;
+		    background: #7b7b7c;
+		    top: 97px;
+		    left: 0;
+		}
+	}
+	&__logo{
+		margin-right: 21px;
+	}
+	&__contact{
+		display: flex;
+		align-items: center;
+		width: 206px;
+		margin: 13px 74px 0 0;
+		padding-left: 22px;
+		border-left: 1px solid #7b7b7c;
+		&:before{
+			content: '\e809';
+			font-family: "fontello";
+    		font-style: normal;
+    		font-weight: normal;
+    		font-size: 29px;
+    		color: $color_gold;
+		}
+		&--number{
+			font: 600 14px/24px 'Open Sans';
+			padding-left: 10px;
+			letter-spacing: -0.05em;
+			color: $color_white;
+		}
+	}
+	&__menu{
+		display: flex;
+		align-items: center;
+		&__item{
+			margin: 13px 22.5px 0;
+			list-style: none;
+			&--a{
+				font: 700 14px/24px 'Open Sans';
+				color: $color_gold;
+			}
+		}
+	}
+	&__bottom{
+		padding-top: 220px;
+		color: $color_white;
+		&__content{
+			width: 520px;
+			&--introduction{
+				font: 600 16px/24px 'Raleway';
+			}
+			&--title{
+				font: 800 60px 'Raleway';
+			}
+			&--text{
+				font: 400 italic 15px/30px 'Lora';
+				margin-bottom: 55px;
+			}
+		}
+	}
+}
