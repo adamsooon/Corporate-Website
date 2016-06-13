@@ -1,0 +1,12 @@
+.btn{
+	&--submit{
+		width: 150px;
+		height: 50px;
+		font: 700 13px/24px 'Releway';
+		border: 3px solid $color_gold;
+		text-transform: uppercase;
+		outline: none;
+		background: transparent;
+		color: $color_gold;;
+	}
+}
