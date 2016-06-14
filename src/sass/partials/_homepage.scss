@@ -40,27 +40,45 @@
 		display: flex;
 	    flex-direction: column;
 	    justify-content: center;
-	    padding: 0;
 	}
-	&--title{
-		font: 800 30px/24px 'Raleway';
-		letter-spacing: 0.075em;
-		text-transform: uppercase;
-	}
-	&--subtitle{
-		font: 400 italic 16px/30px 'Lora';
+	>.triangle{
+		position: relative;
+		&:after{
+			position: absolute;
+    		content: '';
+    		border-bottom: 70px solid #ffaf36;
+    		border-right: 67.5px solid transparent;
+    		border-left: 67.5px solid transparent;
+    		bottom: 0px;
+    		right: 15px;
+		}
+		&:before{
+			position: absolute;
+    		content: '';
+    		border-bottom: 100px solid #36a8ff;
+    		border-right: 80px solid transparent;
+    		border-left: 80px solid transparent;
+    		bottom: 0px;
+    		right: 5.7%;
+		}
 	}
 	&__list{
 		display: flex;
 		flex-wrap: wrap;
 		padding-top: 60px;
 		&__item{
+			position: relative;
 		    display: flex;
 		    max-width: 50%;
-		    padding: 0 14px;
 			list-style: none;
+			&:nth-child(odd){
+				padding-right: 14px;
+			}
+			&:nth-child(even){
+				padding-left: 14px;
+			}
 			&--title{
-				padding-bottom: 10px;
+				padding: 10px 0;
 				font: 800 16px/24px 'Raleway';
 				letter-spacing: 0.1em;
 				text-transform: uppercase;
@@ -69,6 +87,20 @@
 				font: 400 16px/28px 'Open Sans';
 				padding-bottom: 60px;
 			}
+			&:hover{
+				.services__list--icon{
+					color: #68bcfc;
+				}
+				&:before{
+					position: absolute;
+					left: 15%;
+					content: '';
+					width: 10px;
+					height: 2px;
+					background: #68bcfc;
+				}
+			}
+
 		}
 		&--icon{
 			font-size: 55px;
@@ -78,5 +110,43 @@
 		[class*=" icon-"]:before {
 			margin: 0;
 		}
+	}
+	
+}
+
+/* clients section */
+
+.clients{
+	height: 585px;
+	>.inner{
+		display: flex;
+   		flex-direction: column;
+   		justify-content: center;
+	}
+	&--subtitle{
+		padding-bottom: 10px;
+	}
+}
+.testimonials{
+	display: flex;
+    justify-content: space-between;
+    &__item{
+    	&--text{
+    		font: 400 14px/28px 'Open Sans';
+    	}
+    }
+    &__item1, &__item2, &__item3{
+    	list-style: none;
+    	max-width: 330px;
+    }
+}
+.person{
+	display: flex;
+	padding-top: 40px;
+	&__content{
+		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	padding-left: 29px;
 	}
 }
