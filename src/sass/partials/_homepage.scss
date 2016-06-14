@@ -265,14 +265,18 @@
 	&__slider{
 		display: flex;
     	justify-content: space-between;
-    	padding-bottom: 40px;
+    	height: 128px;
+    	border: 1px solid;
     	&__box{
     		display: flex;
     		justify-content: center;
     		align-items: center;
-    		width: 165px;
-    		height: 128px;
-    		border: 1px solid;
+    		width: 195px;
+    		height: 100%;
+    		border-right: 1px solid;
+    		&:last-child{
+    			border-right: 0;
+    		}
     	}
 	}
 }

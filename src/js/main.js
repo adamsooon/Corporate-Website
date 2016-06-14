@@ -10,6 +10,12 @@
         }
     };
     $(document).on('ready', function () {
+        $('.slider--inner').bxSlider({
+            auto: true,
+            adaptiveHeight: true,
+            responsive: true,
+            controls: false,
+        });
         window.CHANGE_ME.init();
     });
 }(jQuery, window, document));
