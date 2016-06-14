@@ -3,9 +3,6 @@
 	//height: 100vh;
    	background: url(../img/Header1.jpg) 50% 100% no-repeat;
     background-size: cover;
-    >.inner{
-		padding: 0 15px;
-    }
 	&-top{
 		display: flex;
 		align-items: center;
@@ -27,7 +24,7 @@
 		display: flex;
 		align-items: center;
 		width: 206px;
-		margin: 13px 74px 0 0;
+		margin: 13px 68px 0 0;
 		padding-left: 22px;
 		border-left: 1px solid #7b7b7c;
 		&:before{
@@ -51,8 +48,12 @@
 		&__item{
 			margin: 13px 22.5px 0;
 			list-style: none;
+			&:last-child{
+				margin-right: 0;
+			}
 			&--a{
 				font: 700 14px/24px 'Open Sans';
+				text-transform: uppercase;
 				color: $color_gold;
 			}
 		}
