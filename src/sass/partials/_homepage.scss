@@ -41,27 +41,6 @@
 	    flex-direction: column;
 	    justify-content: center;
 	}
-	>.triangle{
-		position: relative;
-		&:after{
-			position: absolute;
-    		content: '';
-    		border-bottom: 70px solid #ffaf36;
-    		border-right: 67.5px solid transparent;
-    		border-left: 67.5px solid transparent;
-    		bottom: 0px;
-    		right: 15px;
-		}
-		&:before{
-			position: absolute;
-    		content: '';
-    		border-bottom: 100px solid #36a8ff;
-    		border-right: 80px solid transparent;
-    		border-left: 80px solid transparent;
-    		bottom: 0px;
-    		right: 5.7%;
-		}
-	}
 	&__list{
 		display: flex;
 		flex-wrap: wrap;
@@ -266,6 +245,34 @@
     		padding-bottom: 15px;
     		font: 400 12px/18px 'Open Sans';
     		color: $color_gold;
+    	}
+	}
+}
+
+
+/* partners section */
+
+.partners{
+	height: 460px;
+	>.inner{
+		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+	}
+	&--subtitle{
+		padding-bottom: 40px;
+	}
+	&__slider{
+		display: flex;
+    	justify-content: space-between;
+    	padding-bottom: 40px;
+    	&__box{
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		width: 165px;
+    		height: 128px;
+    		border: 1px solid;
     	}
 	}
 }
