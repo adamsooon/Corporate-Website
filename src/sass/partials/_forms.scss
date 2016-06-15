@@ -66,7 +66,15 @@
             color: $color-gold;
         }
     }
-    .name-label {
+
+    .valid{
+        color: transparent;
+        span{
+            color: transparent;
+        }
+    }
+}
+.name-label {
     left: 0;
     }
     .email-label {
@@ -76,14 +84,31 @@
     left: 0;
     top: 33%;
     }
-
-    .valid{
-        color: transparent;
-        span{
-            color: transparent;
-        }
-    }
-}
 .basic-data{
     display: flex;
+}
+
+@media (min-width: 300px) and (max-width: 639px){
+    .basic-data{
+        flex-wrap: wrap;
+    }
+    .form-contact{
+        &--message{
+            margin: 10px 0;
+        }
+        &--email{
+            margin-top: 10px;
+        }
+    }
+    .form-contact--name, .form-contact--email{
+        width: 100%;
+        border: 1px solid;
+    }
+    .email-label{
+        left: 0;
+        top: 29%;
+    }
+    .message-label{
+        top: 48%;
+    }
 }
