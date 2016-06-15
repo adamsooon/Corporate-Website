@@ -10,7 +10,7 @@
    .inner{
    	width: 1170px;
    	margin: 0 auto;
-      padding: 0 15px;
+      padding: 100px 15px;
    	height: 100%;
    }
    .img--inner{
@@ -49,4 +49,10 @@
          bottom: 0px;
          right: 5.7%;
       }
+   }
+
+   @media (max-width: 1169px) {
+     .inner{
+       width: auto;
+     }
    }

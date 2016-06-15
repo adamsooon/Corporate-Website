@@ -21,6 +21,7 @@
 /* contact form in footer */
 
 .form-contact{
+    position: relative;
     width: 100%;
     padding-top: 35px;
     
@@ -46,14 +47,41 @@
         width: 100%;
         height: 97px;
         margin-bottom: 12px;
+        padding: 15px 21px;
         border: 1px solid #7b7b7c;
         resize: none;
         color: #7b7b7c;
         background: transparent;        
     }
+    &--name:focus + label,&--email:focus + label,&--message:focus + label{
+        color: transparent;
+        span{
+            color: transparent;
+        }
+    }
     &--label{
         position: absolute;
         padding: 15px 0 0 21px;
+        span{
+            color: $color-gold;
+        }
+    }
+    .name-label {
+    left: 0;
+    }
+    .email-label {
+    left: 50%;
+    }
+    .message-label {
+    left: 0;
+    top: 33%;
+    }
+
+    .valid{
+        color: transparent;
+        span{
+            color: transparent;
+        }
     }
 }
 .basic-data{

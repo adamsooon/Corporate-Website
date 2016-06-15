@@ -1,10 +1,11 @@
 /* footer styles */
 
 .footer{
-	height: 435px;
-	padding-top: 80px;
 	background: #2a2b2c;
 	color: #7b7b7c;
+	>.inner{
+		padding: 84px 15px; 
+	}
 	&__list{
 		display: flex;
 		&--title{
@@ -33,6 +34,9 @@
 					border: 1px solid;
 					i{
 						color: #7b7b7c;;
+						&:hover{
+							color: $color_gold;
+						}
 					}
 				}
 			}
@@ -48,11 +52,23 @@
 	}
 	li{
 		list-style: none;
+
 	}
 }
 .footer__menu{
 	padding-top: 25px;
 	&__item{
+		max-width: 165px;
+		border-bottom: 1px solid;
+		&:hover{
+			color: $color_gold;
+			a{
+				color: inherit;
+			}
+		}
+		&:last-child{
+			border: 0;
+		}
 		&:before{
 			content: '\e808';
 			font-family: "fontello";
@@ -66,6 +82,8 @@
 			letter-spacing: -0.075em;
 			cursor: pointer;
 			color: #7b7b7c;
+			
 		}
+
 	}
 }

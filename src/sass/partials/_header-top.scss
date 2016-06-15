@@ -3,6 +3,9 @@
 	//height: 100vh;
    	background: url(../img/Header1.jpg) 50% 100% no-repeat;
     background-size: cover;
+    >.inner{
+    	padding: 0 15px;
+    }
 	&-top{
 		display: flex;
 		align-items: center;

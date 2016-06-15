@@ -4,7 +4,6 @@
 	display: flex;
 	align-items: center;
     justify-content: space-between;
-	height: 350px;
 	li{
 		list-style: none;
 	}
@@ -34,12 +33,10 @@
 
 
 .services{
-	height: 670px;
 	background: #eaeff3;
 	>.inner{
 		display: flex;
 	    flex-direction: column;
-	    justify-content: center;
 	}
 	&__list{
 		display: flex;
@@ -96,11 +93,9 @@
 /* clients section */
 
 .clients{
-	height: 585px;
 	>.inner{
 		display: flex;
    		flex-direction: column;
-   		justify-content: center;
 	}
 	&--subtitle{
 		padding-bottom: 10px;
@@ -153,12 +148,10 @@
 /* news section */
 
 .news{
-	height: 715px;
 	background: #eaeff3;
 	>.inner{
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 	}
 	&__top{
 		margin-bottom: 40px;
@@ -253,11 +246,9 @@
 /* partners section */
 
 .partners{
-	height: 460px;
 	>.inner{
 		display: flex;
     	flex-direction: column;
-    	justify-content: center;
 	}
 	&--subtitle{
 		padding-bottom: 40px;
