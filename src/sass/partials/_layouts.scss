@@ -28,6 +28,7 @@
    }
    .sbhead{
       font: 400 italic 16px/30px 'Lora';
+
    }
    .triangle{
       position: relative;
@@ -55,4 +56,26 @@
      .inner{
        width: auto;
      }
+   }
+   @media (max-width: 1000px){
+      body{
+         overflow-x: hidden;
+      }
+   }
+   @media (max-width: 639px){
+      .shead,.sbhead{
+         text-align: center;
+      }
+      .triangle{
+         &:before{
+            border-bottom: 50px solid #36a8ff;
+            border-right: 40px solid transparent;
+            border-left: 40px solid transparent;
+         }
+         &:after{
+            border-bottom: 35px solid #ffaf36;
+            border-right: 33.75px solid transparent;
+            border-left: 33.75px solid transparent;
+         }
+      }
    }

@@ -101,21 +101,21 @@
     margin-top: 10px;
     width: 35px;
     height: 4px;
-    transition: 2s;
+    transition: 0.3s;
 }
 
 .b2 {
     margin-top: 10px;
     width: 35px;
     height: 4px;
-    transition: 2s;
+    transition: 0.3s;
 }
 
 .b3 {
     margin-top: 10px;
     width: 35px;
     height: 4px;
-    transition: 2s;
+    transition: 0.3s;
 }
 
 .b2a {
@@ -131,12 +131,15 @@
 }
 
 
-@media (min-width: 1000px){
+@media (min-width: 1001px){
 	.burger{
 		display: none;
 	}
+	body{
+		overflow-x: hidden;
+	}
 }
-@media (min-width: 640px) and (max-width: 1000px){
+@media (max-width: 1000px){
 	.header{
 		&__nav{
 			position: absolute;
@@ -144,7 +147,7 @@
     		top: 100px;
     		right: 0;
     		transform: translateX(220px);
-    		transition: 1s;
+    		transition: 0.3s;
 		}
 		&__menu{
 			flex-direction: column;
@@ -160,4 +163,20 @@
 
 .menu-active{
 	transform: translateX(0px);
+}
+
+@media (max-width: 639px){
+	.header{
+		height: 100vh;
+		&__bottom{
+			height: calc(100% - 100px);
+    		display: flex;
+    		flex-direction: column;
+    		justify-content: center;
+			padding-top: 0;
+			&__content{
+				width: auto;
+			}
+		}
+	}
 }
