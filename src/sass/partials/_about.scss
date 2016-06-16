@@ -1,3 +1,25 @@
+.about{
+	&--text{
+		padding-top: 20px;
+	}
+	&__box{
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+		height: 400px;
+		margin-top: 76px;
+		background: url(../img/about/woman.jpg) 50% 100% no-repeat;
+    	background-size: cover;
+    	&--inner{
+    		display: flex;
+    		
+    	}
+    	&__item{
+    		margin: 0 15px;
+    		list-style: none;
+    	}
+	}
+}
 .about__content{
 	display: flex;
 	align-items: center;
@@ -24,6 +46,7 @@
 			font: 400 14px/28px 'Open Sans';
 		}
 	}
+
 }
 
 
