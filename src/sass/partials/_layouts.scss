@@ -21,15 +21,24 @@
          max-height: 100%;
       }
    }
+   /*section title */
    .shead{
       font: 800 30px/24px 'Raleway';
       letter-spacing: 0.075em;
       text-transform: uppercase;
    }
+   /*section subtitle */
    .sbhead{
       font: 400 italic 16px/30px 'Lora';
 
    }
+   /*section content */
+
+   .scontent{
+      font: 400 14px/28px 'Open Sans';
+   }
+
+   /*triangle */
    .triangle{
       position: relative;
       &:after{

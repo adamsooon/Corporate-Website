@@ -81,6 +81,17 @@
 }
 
 
+/*Header in about*/
+
+.header1{
+	>.inner{
+		padding: 0 15px;
+	}
+	height: 395px;
+    background: url(../img/about/about.jpg) 50% 100% no-repeat;
+    background-size: cover;
+}
+
 /*menu and burger */
 
 .burger {
@@ -161,7 +172,7 @@
 		}
 		&__menu{
 			flex-direction: column;
-    		background: rgba(0, 0, 0, 0.7);
+    		background: rgba(0, 0, 0, 0.85);
     		&__item{
     			margin: 6px 0;
     			width: 100%;
