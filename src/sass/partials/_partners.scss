@@ -34,7 +34,7 @@
         height: auto;
         justify-content: flex-start; 
         &__box,&__box2{
-            width: 189.6px;
+            width: calc(100%/6);
             height: 178px;
         }
         &__box{
