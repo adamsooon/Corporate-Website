@@ -51,7 +51,7 @@
                 width: 25%;
                 border: 1px solid;
             }
-            
+
         &__box{
             &:nth-child(6){
                 border-right: 1px solid;
@@ -76,10 +76,15 @@
     }
     .clientsa{
         &__slider{
-            border: 0;
             &__box, &__box2{
                 width: 50%;
-                border: 0;
+                border: 1px solid;
+                &:last-child{
+                    border-right: 1px solid;
+                }
+            }
+            &__box:nth-child(6){
+                border-right: 1px solid;
             }
         }
     }

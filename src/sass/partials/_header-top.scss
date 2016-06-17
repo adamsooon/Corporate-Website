@@ -31,7 +31,7 @@
 		padding-left: 22px;
 		border-left: 1px solid #7b7b7c;
 		&:before{
-			content: '\e809';
+			content: '\e80b';
 			font-family: "fontello";
     		font-style: normal;
     		font-weight: normal;
@@ -88,8 +88,13 @@
 		padding: 0 15px;
 	}
 	height: 395px;
-    background: url(../img/about/about.jpg) 50% 100% no-repeat;
     background-size: cover;
+    &--about{
+    	background: url(../img/about/about.jpg) 50% 100% no-repeat;
+    }
+    &--testimonials{
+    	background: url(../img/testimonials/testimonials.jpg) 50% 100% no-repeat;
+    }
 }
 
 /*menu and burger */
@@ -145,7 +150,16 @@
 }
 
 /*media queries */
-
+@media (min-width: 1001px) and (max-width: 1169px){
+	.header{
+		&__contact{
+			margin: 13px 0 0;
+		}
+		&__menu__item{
+			margin: 13px 14.5px 0;
+		}
+	}
+}
 
 @media (min-width: 1001px){
 	.burger{
