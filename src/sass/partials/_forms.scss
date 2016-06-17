@@ -117,3 +117,29 @@
 
 /* testimonials form */
 
+.form-comments{
+    &__data{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1;
+        &--name,&--email,&--phone{
+            max-width: 555px;
+            height: 45px;
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+    }
+    &--container{
+        display: flex;
+    }
+    &__content{
+        margin-left: 30px;
+        &--comment{
+            width: 555px;
+            height: 177px;
+            margin-bottom: 20px;
+            padding: 20px;
+            resize: none;
+        }
+    }
+}
