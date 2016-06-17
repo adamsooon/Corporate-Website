@@ -143,3 +143,18 @@
         }
     }
 }
+
+@media (max-width: 639px){
+    .form-comments{
+        &--container{
+            display: block;
+        }
+        &__content{
+            margin-left: 0;
+            &--comment{
+                width: 100%;
+            }
+        }
+    }
+}
+

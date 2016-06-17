@@ -69,3 +69,29 @@
 		}
 	}
 }
+
+
+@media (max-width: 639px){
+	.testimonias{
+		&__list{
+			&__item{
+				display: block;
+				>.inner{
+					flex-direction: column;
+				}
+				&__content{
+					margin-left: 0;
+				}
+				&--photo{
+					img{
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+		&__bottom{
+			display: block;
+		}
+	}
+}
+	
