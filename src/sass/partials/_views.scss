@@ -1,6 +1,8 @@
 .views{
 	background: #eaeff3;
 	&__list{
+		align-items: center;
+		align-content: center;
 		&__item{
 			display: flex;
 			margin-bottom: 50px;
@@ -42,5 +44,37 @@
 	.views__list__item__content{
 		order: 1;
 		text-align: right;
+	}
+}
+
+
+@media (min-width: 640px) and (max-width: 1000px){
+	.views__list__item__photo{
+		flex: 0.5 0.5;
+	}
+	.odd{
+		.views__list__item__photo{
+			margin-right: 15px;
+		}
+	}
+	.even{
+		.views__list__item__photo{
+			margin-left: 15px;
+		}
+	}
+}
+
+
+@media (max-width: 639px){
+	.views{
+		&__list{
+			&__item{
+				flex-direction: column;
+				margin-bottom: 35px;
+				&__content{
+					margin-top: 20px;
+				}
+			}
+		}
 	}
 }

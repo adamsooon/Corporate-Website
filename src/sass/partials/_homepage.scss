@@ -214,32 +214,7 @@
 
 /* partners section */
 
-.partners{
-	>.inner{
-		display: flex;
-    	flex-direction: column;
-	}
-	&--subtitle{
-		padding-bottom: 40px;
-	}
-	&__slider{
-		display: flex;
-    	justify-content: space-between;
-    	height: 128px;
-    	border: 1px solid;
-    	&__box{
-    		display: flex;
-    		justify-content: center;
-    		align-items: center;
-    		width: 195px;
-    		height: 100%;
-    		border-right: 1px solid;
-    		&:last-child{
-    			border-right: 0;
-    		}
-    	}
-	}
-}
+
 @media (min-width: 1001px) and (max-width: 1169px){
 	.header{
 		&__contact{
@@ -307,17 +282,6 @@
 		}
 		&__blog{
 			width: 100%;
-		}
-	}
-	.partners{
-		&__slider{
-			height: auto;
-			flex-direction: column;
-			&__box{
-				width: auto;
-				border: 0;
-				border-bottom: 1px solid;
-			}
 		}
 	}
 }

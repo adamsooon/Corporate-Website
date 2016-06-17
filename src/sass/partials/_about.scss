@@ -58,5 +58,16 @@
 				padding: 30px;
 			}
 		}
+		&__box{
+			height: 250px;
+			margin-top: 35px;
+			&--inner{
+				width: 100%;
+				flex-direction: column;
+			}
+			&__item{
+				margin-bottom: 10px;
+			}
+		}
 	}
 }
