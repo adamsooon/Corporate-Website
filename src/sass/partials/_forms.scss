@@ -88,7 +88,7 @@
     display: flex;
 }
 
-@media (min-width: 300px) and (max-width: 639px){
+@media (max-width: 639px){
     .basic-data{
         flex-wrap: wrap;
     }
@@ -158,3 +158,23 @@
     }
 }
 
+.form-faq{
+    width: 100%;
+    margin-bottom: 62px;
+    text-align: center;
+    &--search{
+        width: 703px;
+        height: 47px;
+        border: 0;
+        outline: 0;
+        padding-left: 28px;
+    }
+}
+
+@media (max-width: 1000px){
+    .form-faq{
+        &--search{
+            width: 82%;
+        }
+    }
+}

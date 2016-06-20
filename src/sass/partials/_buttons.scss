@@ -19,6 +19,18 @@
 	&--gold{
 		background: $color_gold;
 	}
+	&--search{
+		width: 47px;
+    	height: 47px;
+    	margin-left: -3px;
+    	border: 0;
+    	color: black;
+    	outline: none;
+    	cursor: pointer;
+		@media (max-width: 639px){
+			transform: translateX(-3px);;
+		}
+	}
 }
 
 @media (min-width: 300px) and (max-width: 639px){
