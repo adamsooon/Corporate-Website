@@ -54,10 +54,14 @@
 			&:last-child{
 				margin-right: 0;
 			}
-			&--a{
+
+			&--link{
 				font: 700 14px/24px 'Open Sans';
 				text-transform: uppercase;
 				color: $color_gold;
+				&:hover{
+					color: #fff;
+				}
 			}
 		}
 	}

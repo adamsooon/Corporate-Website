@@ -179,12 +179,8 @@
 		}
 	}
 	&__blog{
-		width: 50%;
-    	padding-left: 35px;
-    	&--inner{
-    		:last-child{
-    			border-bottom: 0;
-    		}
+    	:last-child{
+    		border-bottom: 0;
     	}
     	
     	&--item{
@@ -210,7 +206,10 @@
     	}
 	}
 }
-
+.blog-wrapper{
+	width: 50%;
+    padding-left: 35px;
+}
 
 /* partners section */
 
@@ -223,11 +222,13 @@
 			display: none;
 		}
 		&__blog{
-			padding-left: 0px;
 			&--content{
 				padding-right: 0;
 			}
 		}
+	}
+	.blog-wrapper{
+		padding-left: 0px;
 	}
 
 }
@@ -271,8 +272,8 @@
 			width: 100%;
 			padding-right: 0px;
 		}
-		&__blog{
-			width: 100%;
-		}
+	}
+	.blog-wrapper{
+		width: 100%;
 	}
 }
