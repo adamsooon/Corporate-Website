@@ -63,10 +63,22 @@
         $('body').on('click', function(){
             $('.header__nav').removeClass('menu-active');
             $('.js-trigle-nav').removeClass('active');
-        })
+        });
 
 
-        /* changing the label in contact-form */
+        /* Career website */
+
+        $('.js-triger-position').on('click', function(){
+            if($(this).parent().is('.active')){
+                $(this).parent().addClass('active');
+            } else{
+                $(this).parent().removeClass('active');
+            }
+        });
+
+
+        /* Lalels in footer - label should disappear after click and if there is more 
+        than 0 letters it will not appear */
         $('.form-contact--name').blur(function () {
         var a = $('.form-contact--name').val();
             if (a.length > 0) {

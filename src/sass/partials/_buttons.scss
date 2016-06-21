@@ -9,7 +9,7 @@
 	border: 0;
 	cursor: pointer;
 	span{
-	font: 700 13px/24px 'Releway';
+		font: 700 13px/24px 'Releway';
 	}
 	&--border{
 		border: 3px solid $color_gold;
@@ -30,6 +30,16 @@
 		@media (max-width: 639px){
 			transform: translateX(-3px);;
 		}
+	}
+	&--show{
+		width: 41px;
+   		height: 41px;
+   		border-radius: 50%;
+   		border: 1px solid;
+   		outline: 0;
+   		background: transparent;
+   		cursor: pointer;
+   		transition: 0.7s;
 	}
 }
 
