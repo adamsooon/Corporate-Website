@@ -66,14 +66,10 @@
         });
 
 
-        /* Career website */
+        /* Career website - triggers*/
 
         $('.js-triger-position').on('click', function(){
-            if($(this).parent().is('.active')){
-                $(this).parent().addClass('active');
-            } else{
-                $(this).parent().removeClass('active');
-            }
+            $(this).parent().parent().toggleClass('active');
         });
 
 

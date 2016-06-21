@@ -48,8 +48,11 @@
 		}
 	}
 	&-bottom{
-		display: none;
-		transition: 0.7s;
+		display: flex;
+		height: 0;
+		overflow: hidden;
+		opacity: 0;
+		transition: 0.250s;
 		&__left{
 			width: 50%;
     		padding-right: 57px;
@@ -92,6 +95,8 @@
 		transform: rotate(90deg);
 	}
 	.position-bottom{
-		display: flex;
+		height: auto;
+		opacity: 1;
+		overflow: visible;
 	}
 }
