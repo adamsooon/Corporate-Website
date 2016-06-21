@@ -16,3 +16,9 @@
         -moz-osx-font-smoothing: auto;
     }
 }
+
+@mixin column-count($columns){
+  -webkit-column-count: $columns; /* Chrome, Safari, Opera */
+  -moz-column-count: $columns; /* Firefox */
+  column-count: $columns;
+}

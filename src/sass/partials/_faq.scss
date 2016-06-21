@@ -2,7 +2,7 @@
 	&__list{
 		flex-wrap: wrap;
 		counter-reset: question;
-		column-count: 2;
+		@include column-count(2);
 		&__item{
 			position: relative;
 			display: inline-block;
