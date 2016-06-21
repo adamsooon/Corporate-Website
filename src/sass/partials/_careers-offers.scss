@@ -1,0 +1,13 @@
+.intro{
+	>.inner{
+		display: flex;
+	}
+	&--text{
+		padding-top: 30px;
+	}
+}
+.text-wrapper{
+	max-width: 750px;
+	margin-left: 30px;
+	padding-left: 28px;
+}
