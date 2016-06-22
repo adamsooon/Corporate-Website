@@ -96,33 +96,6 @@ textarea{
     position: relative;
 }
 
-@media (max-width: 639px){
-    .basic-data{
-        flex-wrap: wrap;
-    }
-    .form-contact{
-        &--message{
-            margin: 10px 0;
-        }
-        &--email{
-            margin-top: 10px;
-        }
-    }
-    .form-contact--name, .form-contact--email{
-        width: 100%;
-        border: 1px solid;
-    }
-    .email-label{
-        left: 0;
-        top: 29%;
-    }
-    .message-label{
-        top: 48%;
-    }
-}
-
-
-
 /* testimonials form */
 
 .form-comments{
@@ -229,5 +202,11 @@ textarea{
         position: absolute;
         top: 50px;
         transform: translateY(0px);
+    }
+}
+
+@media (max-width: 639px){
+    .contact-page-form--message{
+        height: 230px;
     }
 }
