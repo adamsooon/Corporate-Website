@@ -73,14 +73,25 @@
         </section>
         <section class="contact">
             <div class="inner">
+                <h3 class="contact--title shead">Contact Form</h3>
+                <p class="contact-subtitle sbhead">Fill your requirments now</p>
                 <form class="contact-page-form" name="contact-page-form">
-                    <input type="text" class="contact-page-form--name" name="contact-page-form--name" required>
-                    <input type="email" class="contact-page-form--email" name="contact-page-form--email" required>
-                    <input type="text" class="contact-page-form--phone" name="contact-page-form--phone" required>
-                    <select  class="contact-page-form--service" name="contact-page-form--service" required>
-                        <option>Advertisment</option>
-                        <option>PR</option>
-                    <textarea name="contact-page-form--message" class="contact-page-form--message" required></textarea>
+                    <input type="text" id="contact-page-form--name" class="contact-page-form--name" name="contact-page-form--name" required>
+                    <label class="form-contact--label"  for="contact-page-form--name">Name <span>*</span></label>
+                    <input type="email" id="contact-page-form--email" class="contact-page-form--email" name="contact-page-form--email" required>
+                    <label class="form-contact--label" for="contact-page-form--email">Email Address <span>*</span></label>
+                    <input type="text" class="contact-page-form--phone" id="contact-page-form--phone" name="contact-page-form--phone" required>
+                    <label class="form-contact--label" for="contact-page-form--phone">Phone Number <span>*</span></label>
+                    <select  class="contact-page-form--service" id="contact-page-form--service" name="contact-page-form--service" required>
+                        <option value="-1"></option>
+                        <option value="1">Advertisment</option>
+                        <option value="2">PR</option>
+                    </select>
+                    <label class="form-contact--label" for="contact-page-form--service">Service <span>*</span></label>
+                    <div class="message-box">
+                        <textarea name="contact-page-form--message" class="contact-page-form--message" id="contact-page-form--message" required></textarea>
+                        <label class="form-contact--label" for="contact-page-form--message">Message <span>*</span></label>
+                    </div>
                     <button type="submit" name="contact-page-form--submit" class="btn btn--border"><span>Submit Now</span></button>
                 </form>
             </div>

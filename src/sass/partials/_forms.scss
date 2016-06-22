@@ -1,7 +1,7 @@
 /* ==========================================================================
    Forms
    ========================================================================== */
-.form {
+form {
     fieldset {
         margin: 0;
         padding: 0;
@@ -11,7 +11,7 @@
     select,
     textarea {
         &:focus {
-            outline: 0;
+            outline: none;
         }
     }
     *::-ms-clear {
@@ -184,10 +184,35 @@
 /* Contact page form */
 
 .contact-page-form{
+    background: #eaeff3;
     &--name, &--email, &--phone, &--service{
         width: 100%;
         height: 75px;
+        padding-top: 50px;
         border: 0;
         border-bottom: 1px solid #dfe5ea;
+        background: transparent;
+    }
+    &--message{
+        width: 100%;
+        height: 295px;
+        border: 0;
+        margin-bottom: 50px;
+        padding-top: 50px;
+        border-bottom: 1px solid #dfe5ea;
+        background: transparent;
+    }
+    .form-contact--label{
+        position: absolute;
+        transform: translateY(-30px);
+        padding: 0;
+    }
+}
+.message-box{
+    position: relative;
+    .form-contact--label{
+        position: absolute;
+        top: 50px;
+        transform: translateY(0px);
     }
 }
