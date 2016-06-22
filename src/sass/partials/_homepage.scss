@@ -173,24 +173,6 @@
 
 }
 @media (max-width: 639px){
-	.services{
-		>.inner{
-			justify-content: center;
-		}
-		&__list{
-			flex-direction: column;
-			padding-top: 30px;
-			&__item{
-				max-width: 100%;
-				&:nth-child(odd){
-					padding-right: 0;
-				}
-				&:nth-child(even){
-					padding-right: 0
-				}
-			}
-		}
-	}
 	.client{
 		>.inner{
 			flex-direction: column;

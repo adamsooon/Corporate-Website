@@ -51,3 +51,24 @@
 	}
 	
 }
+
+@media (max-width: 639px){
+	.services,.offers{
+		>.inner{
+			justify-content: center;
+		}
+		&__list{
+			flex-direction: column;
+			padding-top: 30px;
+			&__item{
+				max-width: 100%;
+				&:nth-child(odd){
+					padding-right: 0;
+				}
+				&:nth-child(even){
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}
