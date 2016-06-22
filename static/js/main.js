@@ -72,9 +72,19 @@
             $(this).parent().parent().toggleClass('active');
         });
 
-
-        /* Lalels in footer - label should disappear after click and if there is more 
+        /*Labels should disappear after click and if there is more 
         than 0 letters it will not appear */
+
+         $('.js-label-hide').blur(function () {
+            var a = $(this).val();
+            if (a.length > 0) {
+                $(this).siblings().addClass('valid');
+            } else {
+                $(this).siblings().removeClass('valid');
+            }
+        });
+
+        /*
         $('.form-contact--name').blur(function () {
         var a = $('.form-contact--name').val();
             if (a.length > 0) {
@@ -98,7 +108,7 @@
             } else {
                 $('.form-contact--message + label').removeClass('valid');
             }
-        });
+        });*/
          //Google maps
         if ($('.address__content__map').length) {
             $('.address__content__map').easyGoogleMaps({

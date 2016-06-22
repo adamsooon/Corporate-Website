@@ -18,7 +18,9 @@ form {
         display: none;
     }
 }
-
+textarea{
+    resize: none;
+}
 /* contact form in footer */
 
 .form-contact{
@@ -36,7 +38,7 @@ form {
         border-right: 1px solid #7b7b7c;
     }
     &--name,&--email{
-        width: 50%;
+        width: 100%;
         height: 48px;
         margin: 0;
         padding: 10px 0 0 21px;
@@ -67,26 +69,31 @@ form {
             color: $color-gold;
         }
     }
+}
 
-    .valid{
+.valid{
+    color: transparent;
+    span{
         color: transparent;
-        span{
-            color: transparent;
-        }
     }
 }
-.name-label {
-    left: 0;
-    }
-    .email-label {
-    left: 50%;
-    }
-    .message-label {
-    left: 0;
-    top: 33%;
-    }
+
+.name-label, .email-label, .message-label {
+    top: 0;
+}
 .basic-data{
     display: flex;
+    &__name{
+        width: 50%;
+        position: relative;
+    }
+    &__email{
+        width: 50%;
+        position: relative;
+    }
+}
+.advanced-data{
+    position: relative;
 }
 
 @media (max-width: 639px){
@@ -206,6 +213,14 @@ form {
         position: absolute;
         transform: translateY(-30px);
         padding: 0;
+    }
+    input[name^='contact-page-form--']:focus + label,
+    select[name^='contact-page-form--']:focus + label,
+    textarea[name^='contact-page-form--']:focus + label {
+        color: transparent;
+        span{
+            color: transparent;
+        }
     }
 }
 .message-box{

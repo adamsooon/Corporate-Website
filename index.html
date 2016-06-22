@@ -72,24 +72,32 @@
             </div>
         </section>
         <section class="contact">
-            <div class="inner">
+            <div class="inner triangle">
                 <h3 class="contact--title shead">Contact Form</h3>
                 <p class="contact-subtitle sbhead">Fill your requirments now</p>
                 <form class="contact-page-form" name="contact-page-form">
-                    <input type="text" id="contact-page-form--name" class="contact-page-form--name" name="contact-page-form--name" required>
-                    <label class="form-contact--label"  for="contact-page-form--name">Name <span>*</span></label>
-                    <input type="email" id="contact-page-form--email" class="contact-page-form--email" name="contact-page-form--email" required>
-                    <label class="form-contact--label" for="contact-page-form--email">Email Address <span>*</span></label>
-                    <input type="text" class="contact-page-form--phone" id="contact-page-form--phone" name="contact-page-form--phone" required>
-                    <label class="form-contact--label" for="contact-page-form--phone">Phone Number <span>*</span></label>
-                    <select  class="contact-page-form--service" id="contact-page-form--service" name="contact-page-form--service" required>
-                        <option value="-1"></option>
-                        <option value="1">Advertisment</option>
-                        <option value="2">PR</option>
-                    </select>
-                    <label class="form-contact--label" for="contact-page-form--service">Service <span>*</span></label>
+                    <div class="input-box">
+                        <input type="text" id="contact-page-form--name" class="contact-page-form--name js-label-hide" name="contact-page-form--name" required>
+                        <label class="form-contact--label"  for="contact-page-form--name">Name <span>*</span></label>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" id="contact-page-form--email" class="contact-page-form--email js-label-hide" name="contact-page-form--email" required>
+                        <label class="form-contact--label" for="contact-page-form--email">Email Address <span>*</span></label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="contact-page-form--phone js-label-hide" id="contact-page-form--phone" name="contact-page-form--phone" required>
+                        <label class="form-contact--label" for="contact-page-form--phone">Phone Number <span>*</span></label>
+                    </div>
+                    <div class="input-box">
+                        <select  class="contact-page-form--service js-label-hide" id="contact-page-form--service" name="contact-page-form--service" required>
+                            <option value="-1"></option>
+                            <option value="1">Advertisment</option>
+                            <option value="2">PR</option>
+                        </select>
+                        <label class="form-contact--label" for="contact-page-form--service">Service <span>*</span></label>
+                    </div>
                     <div class="message-box">
-                        <textarea name="contact-page-form--message" class="contact-page-form--message" id="contact-page-form--message" required></textarea>
+                        <textarea name="contact-page-form--message" class="contact-page-form--message js-label-hide" id="contact-page-form--message" required></textarea>
                         <label class="form-contact--label" for="contact-page-form--message">Message <span>*</span></label>
                     </div>
                     <button type="submit" name="contact-page-form--submit" class="btn btn--border"><span>Submit Now</span></button>
@@ -124,13 +132,19 @@
                         <h4 class="footer__list--title">Quick contact us</h4>
                         <form class="form-contact">
                             <div class="basic-data">
-                                <input type="text" name="form-contact--name" id="form-contact--name" class="form-contact--name" required="">
-                                <label class="form-contact--label name-label" for="form-contact--name">Name <span>*</span></label>
-                                <input type="email" name="form-contact--email" id="form-contact--email" class="form-contact--email" required="">
-                                <label class="form-contact--label email-label" for="form-contact--email">Email <span>*</span> </label>
+                                <div class="basic-data__name">
+                                    <input type="text" name="form-contact--name" id="form-contact--name" class="form-contact--name js-label-hide" required="">
+                                    <label class="form-contact--label name-label" for="form-contact--name">Name <span>*</span></label>
+                                </div>
+                                <div class="basic-data__email">
+                                    <input type="email" name="form-contact--email" id="form-contact--email" class="form-contact--email js-label-hide" required="">
+                                    <label class="form-contact--label email-label" for="form-contact--email">Email <span>*</span> </label>
+                                </div>                               
                             </div>
-                            <textarea name="form-contact-message" id="form-contact--message" class="form-contact--message"></textarea>
-                            <label class="form-contact--label message-label" for="form-contact--message" required="">Comment <span>*</span></label>
+                            <div class="advanced-data">
+                                <textarea name="form-contact-message" id="form-contact--message" class="form-contact--message js-label-hide"></textarea>
+                                <label class="form-contact--label message-label" for="form-contact--message" required="">Comment <span>*</span></label>
+                            </div>
                             <button type="submit" class="btn btn--border"><span>Submit Now</span></button>
                         </form>
                     </li>
