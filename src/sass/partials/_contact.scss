@@ -1,0 +1,64 @@
+.address{
+	&__content{
+		display: flex;
+		color: #fbfffe;
+		&__map{
+			width: 780px;
+    		height: 425px;
+			list-style-type: none;
+		}
+		&__data{
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			justify-content: center;
+			width: 100%;
+			padding-left: 98px;
+			list-style-type: none;
+			background: #36a8ff;
+		}
+	}
+	&--address{
+		&:before{
+			position: absolute;
+			content: '\e810';
+			font-size: 26px;
+			font-family: "fontello";
+  			font-style: normal;
+  			font-weight: normal;
+  			transform: translate(-45px,12px);
+		}
+	}
+	&--address, &--email{
+		position: relative;
+		font: 400 16px/24px 'Raleway';
+	}
+	&--telephone{
+		position: relative;
+		font: 400 16px/24px 'Open Sans';
+		padding: 40px 0;
+		&:before{
+			position: absolute;
+			content: '\e80b';
+			font-size: 26px;
+			font-family: "fontello";
+  			font-style: normal;
+  			font-weight: normal;
+  			transform: translate(-45px,12px);
+		}
+	}
+	&--email{
+		&:before{
+			position: absolute;
+			content: '\e807';
+			font-size: 26px;
+			font-family: "fontello";
+  			font-style: normal;
+  			font-weight: normal;
+  			transform: translate(-45px,12px);
+		}
+	}
+}
+
+/*contact form */
+
