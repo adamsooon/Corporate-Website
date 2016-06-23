@@ -164,7 +164,8 @@ textarea{
 
 /* Contact page form */
 
-.contact-page-form{
+.contact-page-form, 
+.blog-page-form{
     background: #eaeff3;
     &--name, &--email, &--phone, &--service{
         width: 100%;
@@ -181,7 +182,8 @@ textarea{
         border-bottom: 1px solid #dfe5ea;
         background: transparent;
     }
-    .form-contact--label{
+    .form-contact--label,
+    .form-blog--label {
         position: absolute;
         padding: 0;
         left: 0;
@@ -195,20 +197,27 @@ textarea{
             color: transparent;
         }
     }
+    &--name:focus + label,&--email:focus + label,&--message:focus + label, &--service:focus + label, &--phone:focus + label {
+        color: transparent;
+        span{
+            color: transparent;
+        }
+    }
 }
 .message-box{
     position: relative;
+    padding-top: 30px;
     .form-contact--label{
         position: absolute;
         top: 50px;
-        transform: translateY(0px);
     }
 }
 .input-box{
     position: relative;
 }
 @media (max-width: 639px){
-    .contact-page-form--message{
+    .contact-page-form--message,
+    .blog-page-form {
         height: 230px;
     }
 }
