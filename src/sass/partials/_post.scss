@@ -148,3 +148,48 @@
 .comments{
 	background: #eaeff3;
 }
+
+@media (max-width: 639px){
+	.post{
+		&__content{
+			padding-left: 0;
+			&__quote{
+				padding: 15px;
+				margin: 0;
+				margin-bottom: 15px;
+			}
+			&__media{
+				justify-content: center;
+			}
+		}
+		&__footer{
+			flex-direction: column;
+			&__info{
+				margin: 0;
+				padding: 20px;
+			}
+		}
+	}
+	.feedback{
+		&__comments{
+			&__item{
+				flex-direction: column;
+				&:hover{
+					padding-left: 0;
+					.comment-content{
+						padding-right: 0px;
+					}
+				}
+			}
+		}
+		
+	}
+	.comment-content{
+		margin-left: 0;
+		padding: 0;
+		padding-top: 10px;
+		&--title{
+			text-align: center;
+		}
+	}
+}

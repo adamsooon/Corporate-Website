@@ -217,7 +217,7 @@ textarea{
 }
 @media (max-width: 639px){
     .contact-page-form--message,
-    .blog-page-form {
+    .blog-page-form--message js-label-hide {
         height: 230px;
     }
 }
