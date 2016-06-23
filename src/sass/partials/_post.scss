@@ -1,3 +1,8 @@
+.blog{
+	>.inner{
+		padding-bottom: 0;
+	}
+}
 .post{
 	border-bottom: 1px solid #dfe5ea;
 	&__head{
@@ -90,6 +95,52 @@
 		background: #eb4125;
 	}
 
+}
+
+/*feedback section */
+
+.feedback{
+	>.inner{
+		padding-top: 52px;
+	}
+	&__comments{
+		&__item{
+			display: flex;
+			padding: 40px 0;
+			border-bottom: 1px solid #dfe5ea;
+			&:hover{
+				padding-left: 134px;
+				.comment-content{
+					padding-right: 0;
+				}
+			}
+			&:last-child{
+				border: 0;
+			}
+		}
+	}
+}
+.comment-content{
+	flex: 1 1;
+	margin-left: 50px;
+	padding: 0 82px 0 0;
+	&--title{
+		font: 700 13px/24px 'Raleway';
+	}
+	&--link{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 36px;
+		height: 36px;
+		margin: 20px 0 0 10px;
+		border-radius: 50%;
+		border: 1px solid $color_gold;
+		span{
+			font-size: 13px;
+			color: $color_gold;
+		}
+	}
 }
 
 /*comments section */
