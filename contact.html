@@ -89,12 +89,10 @@
                         <label class="form-contact--label" for="contact-page-form--phone">Phone Number <span>*</span></label>
                     </div>
                     <div class="input-box">
-                        <select  class="contact-page-form--service js-label-hide" id="contact-page-form--service" name="contact-page-form--service" required>
-                            <option value="-1"></option>
+                        <select  class="contact-page-form--service js-label-hide" id="contact-page-form--service" name="contact-page-form--service">
                             <option value="1">Advertisment</option>
                             <option value="2">PR</option>
                         </select>
-                        <label class="form-contact--label" for="contact-page-form--service">Service <span>*</span></label>
                     </div>
                     <div class="message-box">
                         <textarea name="contact-page-form--message" class="contact-page-form--message js-label-hide" id="contact-page-form--message" required></textarea>
@@ -142,8 +140,8 @@
                                 </div>                               
                             </div>
                             <div class="advanced-data">
-                                <textarea name="form-contact-message" id="form-contact--message" class="form-contact--message js-label-hide"></textarea>
-                                <label class="form-contact--label message-label" for="form-contact--message" required="">Comment <span>*</span></label>
+                                <textarea name="form-contact-message" id="form-contact--message" class="form-contact--message js-label-hide" required></textarea>
+                                <label class="form-contact--label message-label" for="form-contact--message">Comment <span>*</span></label>
                             </div>
                             <button type="submit" class="btn btn--border"><span>Submit Now</span></button>
                         </form>
@@ -154,6 +152,7 @@
         <script src="static/js/vendor/jquery.js?v=1437929479000"></script>
         <script src="static/js/plugins.js?v=1437929479000"></script>
         <script src="static/js/easygooglemaps.js"></script>
+        <script src="static/js/select2.min.js"></script>
         <script src="static/js/main.js?v=1437929479000"></script>
     </body>
 </html>
