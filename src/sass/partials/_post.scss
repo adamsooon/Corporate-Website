@@ -51,6 +51,7 @@
 		display: flex;
 		margin: 71px 0; 
 		&__info{
+			position: relative;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -61,6 +62,16 @@
 			color: #fff;
 			.post__content--text{
 				margin-bottom: 0;
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				top: 43%;
+				left: -10px;
+				width: 20px;
+				height: 20px;
+				transform: rotate(45deg);
+				background: #36a8ff;
 			}
 		}
 	}
@@ -108,15 +119,6 @@
 			display: flex;
 			padding: 40px 0;
 			border-bottom: 1px solid #dfe5ea;
-			&:hover{
-				padding-left: 134px;
-				.comment-content{
-					padding-right: 0;
-				}
-			}
-			&:last-child{
-				border: 0;
-			}
 		}
 	}
 }
@@ -143,10 +145,32 @@
 	}
 }
 
+.repost{
+	padding-left: 134px;
+	border: 0;
+	.comment-content{
+		padding-right: 0;
+	}
+}
 /*comments section */
 
 .comments{
 	background: #eaeff3;
+}
+@media (max-width: 1000px){
+	.post__footer--photo{
+		align-self: center;
+	}
+}
+@media (min-width: 1001px) and (max-width: 1100px){
+	.post{
+		&__footer{
+			&__info{
+			    padding: 30px 99px 30px 36px;
+			}
+		}
+		
+	}
 }
 
 @media (max-width: 639px){
@@ -167,6 +191,13 @@
 			&__info{
 				margin: 0;
 				padding: 20px;
+				&:before{
+					top: -2%;
+					left: 47%;
+				}
+			}
+			&--photo{
+				margin-bottom: 25px
 			}
 		}
 	}
@@ -174,11 +205,8 @@
 		&__comments{
 			&__item{
 				flex-direction: column;
-				&:hover{
-					padding-left: 0;
-					.comment-content{
-						padding-right: 0px;
-					}
+				&--photo{
+					margin: 0 auto;
 				}
 			}
 		}
@@ -191,5 +219,8 @@
 		&--title{
 			text-align: center;
 		}
+	}
+	.repost{
+		padding-left: 60px;
 	}
 }
