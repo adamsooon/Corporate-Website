@@ -1,0 +1,51 @@
+.news{
+	&__list{
+		&:first-child{
+			padding-top: 0;
+		}
+		&:last-child{
+			padding-bottom: 0;
+		}
+		&__item{
+			display: flex;
+   			padding: 100px 0;
+   			&--date{
+   				width: 165px;
+    			height: 45px;
+    			margin-right: 30px;
+   			}
+   			&--title{
+   				font: 800 16px/24px 'Raleway';
+    			padding-bottom: 20px;
+    			color: #1c1c1c;
+    			opacity: 0.2;
+   			}
+   			&--photo{
+   				padding-top: 15px;
+   				&:first-child{
+   					padding-top: 0;
+   				}
+   			}
+		}
+	}
+	&-feature{
+		padding-top: 30px;
+		&__item{
+			list-style: none;
+    		padding-left: 25px;
+    		font: 700 12px/30px 'Open Sans';
+    		text-transform: uppercase;
+    		letter-spacing: 0.1em;
+		}
+	}
+}
+.photos-wrapper{
+	margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 360px;
+    justify-content: space-between
+}
+.text-wrapper{
+	flex: 1 1;
+}
