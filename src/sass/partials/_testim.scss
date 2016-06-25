@@ -1,97 +1,95 @@
-.testimonias{
-	&__bottom{
-		display: flex;
-	}
-	&--subtitle{
-		padding-bottom: 33px;
-	}
-	&__list{
-		align-content: stretch;
-		align-items: stretch;
-		&__item{
-			list-style-type: none;
-			>.inner{
-				display: flex;
-			}
-			&:nth-child(even){
-				background: #eaeff3;
-			}
-			&:first-child{
-				>.inner{
-					flex-direction: column;
-					background: url(../img/Testimonials/quote.png) 98% 10.8571% no-repeat;
-				}
-			}
-			&__content{
-				flex: 1 1;
-				align-self: center;
-    			max-width: 750px;
-    			margin-left: -68px;
-    			padding: 50px 50px 37px 59px;
-    			border: 1px solid #dfe5ea;
-    			background: #ffffff;
-    			&--opinion{
-    				position: relative;
-    				color: #585858;
-    				&:before{
-    					position: absolute;
-    					top: -5px;
-    					left: -25px;
-    					content: '\e813';
-    					font-family: "fontello";
-    					font-style: normal;
-    					font-weight: normal;
-    					font-size: 18px;
-    					color: #1c1c1c;
-    				}
-	    			&:after{
-	    				position: absolute;
-	    				bottom: -21px;
-	    				right: -2%;
-	    				content: '\e813';
-	    				font-family: "fontello";
-	    				font-style: normal;
-	    				font-weight: normal;
-	    				font-size: 18px;
-	    				color: #1c1c1c;
-	    			}
-    			}
-    			&--author{
-    				font: 700 13px/24px 'Raleway';
-    				letter-spacing: 0.075em;
-    				padding-top: 20px;
-    			}
-    			&--designation{
-    				font: 400 14px/28px 'Open Sans';
-    				color: $color_gold;
-    			}
-			}
-		}
-	}
+.testimonias {
+    &__bottom {
+        display: flex;
+    }
+    &--subtitle {
+        padding-bottom: 33px;
+    }
+    &__list {
+        align-content: stretch;
+        align-items: stretch;
+        &__item {
+            list-style-type: none;
+            >.inner {
+                display: flex;
+            }
+            &:nth-child(even) {
+                background: #eaeff3;
+            }
+            &:first-child {
+                >.inner {
+                    flex-direction: column;
+                    background: url(../img/Testimonials/quote.png) 98% 10.8571% no-repeat;
+                }
+            }
+            &__content {
+                flex: 1 1;
+                align-self: center;
+                max-width: 750px;
+                margin-left: -68px;
+                padding: 50px 50px 37px 59px;
+                border: 1px solid #dfe5ea;
+                background: #ffffff;
+                &--opinion {
+                    position: relative;
+                    color: #585858;
+                    &:before {
+                        position: absolute;
+                        top: -5px;
+                        left: -25px;
+                        content: '\e813';
+                        font-family: "fontello";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        color: #1c1c1c;
+                    }
+                    &:after {
+                        position: absolute;
+                        bottom: -21px;
+                        right: -2%;
+                        content: '\e813';
+                        font-family: "fontello";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        color: #1c1c1c;
+                    }
+                }
+                &--author {
+                    font: 700 13px/24px 'Raleway';
+                    letter-spacing: 0.075em;
+                    padding-top: 20px;
+                }
+                &--designation {
+                    font: 400 14px/28px 'Open Sans';
+                    color: $color_gold;
+                }
+            }
+        }
+    }
 }
 
-
-@media (max-width: 639px){
-	.testimonias{
-		&__list{
-			&__item{
-				display: block;
-				>.inner{
-					flex-direction: column;
-				}
-				&__content{
-					margin-left: 0;
-				}
-				&--photo{
-					img{
-						margin: 0 auto;
-					}
-				}
-			}
-		}
-		&__bottom{
-			display: block;
-		}
-	}
+@media (max-width: 639px) {
+    .testimonias {
+        &__list {
+            &__item {
+                display: block;
+                >.inner {
+                    flex-direction: column;
+                }
+                &__content {
+                    margin-left: 0;
+                }
+                &--photo {
+                    img {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        &__bottom {
+            display: block;
+        }
+    }
 }
-	

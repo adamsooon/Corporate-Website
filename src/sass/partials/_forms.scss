@@ -1,6 +1,7 @@
 /* ==========================================================================
    Forms
    ========================================================================== */
+
 form {
     fieldset {
         margin: 0;
@@ -18,26 +19,29 @@ form {
         display: none;
     }
 }
-textarea{
+
+textarea {
     resize: none;
 }
+
+
 /* contact form in footer */
 
-.form-contact{
+.form-contact {
     position: relative;
     width: 100%;
     padding-top: 35px;
-    
-    &--name{
+    &--name {
         border: 0;
         border-left: 1px solid #7b7b7c;
         border-right: 1px solid #7b7b7c;
     }
-    &--email{
+    &--email {
         border: 0;
         border-right: 1px solid #7b7b7c;
     }
-    &--name,&--email{
+    &--name,
+    &--email {
         width: 100%;
         height: 48px;
         margin: 0;
@@ -46,7 +50,7 @@ textarea{
         color: #7b7b7c;
         background: transparent;
     }
-    &--message{
+    &--message {
         width: 100%;
         height: 97px;
         margin-bottom: 12px;
@@ -54,69 +58,78 @@ textarea{
         border: 1px solid #7b7b7c;
         resize: none;
         color: #7b7b7c;
-        background: transparent;        
+        background: transparent;
     }
-    &--name:focus + label,&--email:focus + label,&--message:focus + label{
+    &--name:focus + label,
+    &--email:focus + label,
+    &--message:focus + label {
         color: transparent;
-        span{
+        span {
             color: transparent;
         }
     }
-    &--label{
+    &--label {
         position: absolute;
         padding: 15px 0 0 21px;
-        span{
+        span {
             color: $color-gold;
         }
     }
 }
 
-.valid{
+.valid {
     color: transparent;
-    span{
+    span {
         color: transparent;
     }
 }
 
-.name-label, .email-label, .message-label {
+.name-label,
+.email-label,
+.message-label {
     top: 0;
     left: 0;
 }
-.basic-data{
+
+.basic-data {
     display: flex;
-    &__name{
+    &__name {
         width: 50%;
         position: relative;
     }
-    &__email{
+    &__email {
         width: 50%;
         position: relative;
     }
 }
-.advanced-data{
+
+.advanced-data {
     position: relative;
 }
 
+
 /* testimonials form */
 
-.form-comments{
-    &__data{
+.form-comments {
+    &__data {
         display: flex;
         flex-direction: column;
         flex: 1 1;
-        &--name,&--email,&--phone{
+        &--name,
+        &--email,
+        &--phone {
             max-width: 555px;
             height: 45px;
             margin-bottom: 20px;
             padding-left: 25px;
         }
     }
-    &--container{
+    &--container {
         display: flex;
     }
-    &__content{
+    &__content {
         margin-left: 30px;
-        &--comment{
+        &--comment {
             width: 555px;
             height: 177px;
             margin-bottom: 20px;
@@ -126,25 +139,25 @@ textarea{
     }
 }
 
-@media (max-width: 639px){
-    .form-comments{
-        &--container{
+@media (max-width: 639px) {
+    .form-comments {
+        &--container {
             display: block;
         }
-        &__content{
+        &__content {
             margin-left: 0;
-            &--comment{
+            &--comment {
                 width: 100%;
             }
         }
     }
 }
 
-.form-faq{
+.form-faq {
     width: 100%;
     margin-bottom: 62px;
     text-align: center;
-    &--search{
+    &--search {
         width: 703px;
         height: 47px;
         border: 0;
@@ -153,9 +166,9 @@ textarea{
     }
 }
 
-@media (max-width: 1000px){
-    .form-faq{
-        &--search{
+@media (max-width: 1000px) {
+    .form-faq {
+        &--search {
             width: 82%;
         }
     }
@@ -164,17 +177,20 @@ textarea{
 
 /* Contact page form */
 
-.contact-page-form, 
-.blog-page-form{
+.contact-page-form,
+.blog-page-form {
     background: #eaeff3;
-    &--name, &--email, &--phone, &--service{
+    &--name,
+    &--email,
+    &--phone,
+    &--service {
         width: 100%;
         height: 75px;
         border: 0;
         border-bottom: 1px solid #dfe5ea;
         background: transparent;
     }
-    &--message{
+    &--message {
         width: 100%;
         height: 295px;
         border: 0;
@@ -193,29 +209,36 @@ textarea{
     select[name^='contact-page-form--']:focus + label,
     textarea[name^='contact-page-form--']:focus + label {
         color: transparent;
-        span{
+        span {
             color: transparent;
         }
     }
-    &--name:focus + label,&--email:focus + label,&--message:focus + label, &--service:focus + label, &--phone:focus + label {
+    &--name:focus + label,
+    &--email:focus + label,
+    &--message:focus + label,
+    &--service:focus + label,
+    &--phone:focus + label {
         color: transparent;
-        span{
+        span {
             color: transparent;
         }
     }
 }
-.message-box{
+
+.message-box {
     position: relative;
     padding-top: 30px;
-    .form-contact--label{
+    .form-contact--label {
         position: absolute;
         top: 50px;
     }
 }
-.input-box{
+
+.input-box {
     position: relative;
 }
-@media (max-width: 639px){
+
+@media (max-width: 639px) {
     .contact-page-form--message,
     .blog-page-form--message js-label-hide {
         height: 230px;

@@ -1,57 +1,56 @@
-.service{
-	&__list{
-		display: flex;
-    	flex-wrap: wrap;
-    	align-content: stretch;
-    	align-items: stretch;
-    	&__item{
-    		width: calc(50% - 15px);
-    		margin-top: 22px;
-    		list-style: none;
-    		&:nth-child(odd){
-    			margin-right: 15px;
-    		}
-    		&:nth-child(even){
-    			margin-left: 15px;
-    		}
-            &:hover{
+.service {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        align-items: stretch;
+        &__item {
+            width: calc(50% - 15px);
+            margin-top: 22px;
+            list-style: none;
+            &:nth-child(odd) {
+                margin-right: 15px;
+            }
+            &:nth-child(even) {
+                margin-left: 15px;
+            }
+            &:hover {
                 box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.4);
             }
-    		&--title{
-    			padding-bottom: 24px;
-    			font: 800 16px/24px 'Raleway';
-      			letter-spacing: 0.1em;
-      			text-transform: uppercase;
-    		}
-    		&--text{
-    			padding-bottom: 44px;
-    		}
-    	}
-	}
+            &--title {
+                padding-bottom: 24px;
+                font: 800 16px/24px 'Raleway';
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+            }
+            &--text {
+                padding-bottom: 44px;
+            }
+        }
+    }
 }
 
-.text-wrap{
-	padding: 50px 61px 55px 36px;
-	border: 1px solid #dfe5ea;
+.text-wrap {
+    padding: 50px 61px 55px 36px;
+    border: 1px solid #dfe5ea;
 }
 
-
-@media (max-width: 639px){
-	.service{
-		&__list{
-			flex-direction: column;
-			&__item{
-				width: auto;
-				&:nth-child(odd){
-					margin-right: 0;
-				}
-				&:nth-child(even){
-					margin-left: 0;
-				}
-			}
-		}
-	}
-	.text-wrap{
-		padding: 30px 15px;
-	}
+@media (max-width: 639px) {
+    .service {
+        &__list {
+            flex-direction: column;
+            &__item {
+                width: auto;
+                &:nth-child(odd) {
+                    margin-right: 0;
+                }
+                &:nth-child(even) {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .text-wrap {
+        padding: 30px 15px;
+    }
 }

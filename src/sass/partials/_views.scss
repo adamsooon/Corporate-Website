@@ -1,80 +1,78 @@
-.views{
-	background: #eaeff3;
-	&__list{
-		align-items: center;
-		align-content: center;
-		&__item{
-			display: flex;
-			margin-bottom: 50px;
-			&:last-child{
-				margin-bottom: 0;
-			}
-			&__photo{
-				flex: 0.35 0.35;
-			}
-			&__content{
-				flex: 1 1;
-				&--title{
-					font: 800 16px/24px 'Raleway';
-					letter-spacing: 0.1em;
-				}
-				&--text{
-					font: 400 14px/28px 'Open Sans';
-				}
-			}
-		}
-	}
-	.triangle{
-		&:before{
-			right: inherit;
-		}
-		&:after{
-			right: inherit;
-			left: 7%;
-		}
-	}
+.views {
+    background: #eaeff3;
+    &__list {
+        align-items: center;
+        align-content: center;
+        &__item {
+            display: flex;
+            margin-bottom: 50px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &__photo {
+                flex: 0.35 0.35;
+            }
+            &__content {
+                flex: 1 1;
+                &--title {
+                    font: 800 16px/24px 'Raleway';
+                    letter-spacing: 0.1em;
+                }
+                &--text {
+                    font: 400 14px/28px 'Open Sans';
+                }
+            }
+        }
+    }
+    .triangle {
+        &:before {
+            right: inherit;
+        }
+        &:after {
+            right: inherit;
+            left: 7%;
+        }
+    }
 }
 
-.even{
-	.views__list__item__photo{
-		display: flex;
-    	justify-content: flex-end;
-		order: 2;
-	}
-	.views__list__item__content{
-		order: 1;
-		text-align: right;
-	}
+.even {
+    .views__list__item__photo {
+        display: flex;
+        justify-content: flex-end;
+        order: 2;
+    }
+    .views__list__item__content {
+        order: 1;
+        text-align: right;
+    }
 }
 
-
-@media (min-width: 640px) and (max-width: 1000px){
-	.views__list__item__photo{
-		flex: 0.5 0.5;
-	}
-	.odd{
-		.views__list__item__photo{
-			margin-right: 15px;
-		}
-	}
-	.even{
-		.views__list__item__photo{
-			margin-left: 15px;
-		}
-	}
+@media (min-width: 640px) and (max-width: 1000px) {
+    .views__list__item__photo {
+        flex: 0.5 0.5;
+    }
+    .odd {
+        .views__list__item__photo {
+            margin-right: 15px;
+        }
+    }
+    .even {
+        .views__list__item__photo {
+            margin-left: 15px;
+        }
+    }
 }
 
-
-@media (max-width: 639px){
-	.views{
-		&__list{
-			&__item{
-				flex-direction: column;
-				margin-bottom: 35px;
-				&__content{
-					margin-top: 20px;
-				}
-			}
-		}
-	}
+@media (max-width: 639px) {
+    .views {
+        &__list {
+            &__item {
+                flex-direction: column;
+                margin-bottom: 35px;
+                &__content {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
 }

@@ -1,226 +1,230 @@
-.blog{
-	>.inner{
-		padding-bottom: 0;
-	}
-}
-.post{
-	border-bottom: 1px solid #dfe5ea;
-	&__head{
-		display: flex;
-		padding: 30px 0;
-		&--title{
-			font: 800 18px/24px 'Raleway';
-		}
-		&--data{
-			font: 600 13px/24px 'Open Sans';
-			text-transform: uppercase;
-		}
-	}
-	&__content{
-		padding-left: 98px;
-		&--title{
-			font: 800 16px/24px 'Raleway';
-			letter-spacing: 0.05em;
-		}
-		&--text{
-			margin-bottom: 48px;
-			font: 400 14px/28px 'Raleway';
-		}
-		&__quote{
-			background: #fef1de;
-			margin: 0 0 48px 97px;
-			padding: 18px 67px 18px 40px;
-			border-left: 5px solid $color_gold;
-			&--text{
-				font: 400 italic 15px/28px 'Lora';
-			}
-		}
-		&__media{
-			display: flex;
-			&--text{
-				align-self: center;
-				font: 400 14px/28px 'Open Sans';
-				letter-spacing: 0.05em;
-			}
-		}
-		&--photo{
-			margin-bottom: 48px;
-		}
-	}
-	&__footer{
-		display: flex;
-		margin: 71px 0; 
-		&__info{
-			position: relative;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			flex: 1 1;
-			margin-left: 30px;
-			padding: 37px 99px 37px 36px;
-			background: #36a8ff;
-			color: #fff;
-			.post__content--text{
-				margin-bottom: 0;
-			}
-			&:before{
-				content: '';
-				position: absolute;
-				top: 43%;
-				left: -10px;
-				width: 20px;
-				height: 20px;
-				transform: rotate(45deg);
-				background: #36a8ff;
-			}
-		}
-	}
+.blog {
+    >.inner {
+        padding-bottom: 0;
+    }
 }
 
-.text-wrapper{
-	flex: 1 1;
-	padding-left: 40px;
+.post {
+    border-bottom: 1px solid #dfe5ea;
+    &__head {
+        display: flex;
+        padding: 30px 0;
+        &--title {
+            font: 800 18px/24px 'Raleway';
+        }
+        &--data {
+            font: 600 13px/24px 'Open Sans';
+            text-transform: uppercase;
+        }
+    }
+    &__content {
+        padding-left: 98px;
+        &--title {
+            font: 800 16px/24px 'Raleway';
+            letter-spacing: 0.05em;
+        }
+        &--text {
+            margin-bottom: 48px;
+            font: 400 14px/28px 'Raleway';
+        }
+        &__quote {
+            background: #fef1de;
+            margin: 0 0 48px 97px;
+            padding: 18px 67px 18px 40px;
+            border-left: 5px solid $color_gold;
+            &--text {
+                font: 400 italic 15px/28px 'Lora';
+            }
+        }
+        &__media {
+            display: flex;
+            &--text {
+                align-self: center;
+                font: 400 14px/28px 'Open Sans';
+                letter-spacing: 0.05em;
+            }
+        }
+        &--photo {
+            margin-bottom: 48px;
+        }
+    }
+    &__footer {
+        display: flex;
+        margin: 71px 0;
+        &__info {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1 1;
+            margin-left: 30px;
+            padding: 37px 99px 37px 36px;
+            background: #36a8ff;
+            color: #fff;
+            .post__content--text {
+                margin-bottom: 0;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 43%;
+                left: -10px;
+                width: 20px;
+                height: 20px;
+                transform: rotate(45deg);
+                background: #36a8ff;
+            }
+        }
+    }
 }
 
-.media{
-	&--link{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 52px;
-		height: 52px;
-		margin-left: 10px;
-		border-radius: 50%;
-		span{
-			color: white;
-			font-size: 21px;
-		}
-	}
-	&--facebook{
-		background: #496fa5;
-	}
-	&--twitter{
-		background: #00baef;
-	}
-	&--gplus{
-		background: #eb4125;
-	}
-
+.text-wrapper {
+    flex: 1 1;
+    padding-left: 40px;
 }
+
+.media {
+    &--link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 52px;
+        height: 52px;
+        margin-left: 10px;
+        border-radius: 50%;
+        span {
+            color: white;
+            font-size: 21px;
+        }
+    }
+    &--facebook {
+        background: #496fa5;
+    }
+    &--twitter {
+        background: #00baef;
+    }
+    &--gplus {
+        background: #eb4125;
+    }
+}
+
 
 /*feedback section */
 
-.feedback{
-	>.inner{
-		padding-top: 52px;
-	}
-	&__comments{
-		&__item{
-			display: flex;
-			padding: 40px 0;
-			border-bottom: 1px solid #dfe5ea;
-		}
-	}
-}
-.comment-content{
-	flex: 1 1;
-	margin-left: 50px;
-	padding: 0 82px 0 0;
-	&--title{
-		font: 700 13px/24px 'Raleway';
-	}
-	&--link{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 36px;
-		height: 36px;
-		margin: 20px 0 0 10px;
-		border-radius: 50%;
-		border: 1px solid $color_gold;
-		span{
-			font-size: 13px;
-			color: $color_gold;
-		}
-	}
+.feedback {
+    >.inner {
+        padding-top: 52px;
+    }
+    &__comments {
+        &__item {
+            display: flex;
+            padding: 40px 0;
+            border-bottom: 1px solid #dfe5ea;
+        }
+    }
 }
 
-.repost{
-	padding-left: 134px;
-	border: 0;
-	.comment-content{
-		padding-right: 0;
-	}
+.comment-content {
+    flex: 1 1;
+    margin-left: 50px;
+    padding: 0 82px 0 0;
+    &--title {
+        font: 700 13px/24px 'Raleway';
+    }
+    &--link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        height: 36px;
+        margin: 20px 0 0 10px;
+        border-radius: 50%;
+        border: 1px solid $color_gold;
+        span {
+            font-size: 13px;
+            color: $color_gold;
+        }
+    }
 }
+
+.repost {
+    padding-left: 134px;
+    border: 0;
+    .comment-content {
+        padding-right: 0;
+    }
+}
+
+
 /*comments section */
 
-.comments{
-	background: #eaeff3;
-}
-@media (max-width: 1000px){
-	.post__footer--photo{
-		align-self: center;
-	}
-}
-@media (min-width: 1001px) and (max-width: 1100px){
-	.post{
-		&__footer{
-			&__info{
-			    padding: 30px 99px 30px 36px;
-			}
-		}
-		
-	}
+.comments {
+    background: #eaeff3;
 }
 
-@media (max-width: 639px){
-	.post{
-		&__content{
-			padding-left: 0;
-			&__quote{
-				padding: 15px;
-				margin: 0;
-				margin-bottom: 15px;
-			}
-			&__media{
-				justify-content: center;
-			}
-		}
-		&__footer{
-			flex-direction: column;
-			&__info{
-				margin: 0;
-				padding: 20px;
-				&:before{
-					top: -2%;
-					left: 47%;
-				}
-			}
-			&--photo{
-				margin-bottom: 25px
-			}
-		}
-	}
-	.feedback{
-		&__comments{
-			&__item{
-				flex-direction: column;
-				&--photo{
-					margin: 0 auto;
-				}
-			}
-		}
-		
-	}
-	.comment-content{
-		margin-left: 0;
-		padding: 0;
-		padding-top: 10px;
-		&--title{
-			text-align: center;
-		}
-	}
-	.repost{
-		padding-left: 60px;
-	}
+@media (max-width: 1000px) {
+    .post__footer--photo {
+        align-self: center;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1100px) {
+    .post {
+        &__footer {
+            &__info {
+                padding: 30px 99px 30px 36px;
+            }
+        }
+    }
+}
+
+@media (max-width: 639px) {
+    .post {
+        &__content {
+            padding-left: 0;
+            &__quote {
+                padding: 15px;
+                margin: 0;
+                margin-bottom: 15px;
+            }
+            &__media {
+                justify-content: center;
+            }
+        }
+        &__footer {
+            flex-direction: column;
+            &__info {
+                margin: 0;
+                padding: 20px;
+                &:before {
+                    top: -2%;
+                    left: 47%;
+                }
+            }
+            &--photo {
+                margin-bottom: 25px
+            }
+        }
+    }
+    .feedback {
+        &__comments {
+            &__item {
+                flex-direction: column;
+                &--photo {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .comment-content {
+        margin-left: 0;
+        padding: 0;
+        padding-top: 10px;
+        &--title {
+            text-align: center;
+        }
+    }
+    .repost {
+        padding-left: 60px;
+    }
 }
