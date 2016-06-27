@@ -80,6 +80,21 @@ h5 {
     }
 }
 
+.select2-container .select2-selection--single {
+    height: 75px;
+    padding-top: 25px;
+    border-bottom: 1px solid #dfe5ea;
+}
+
+.select2-selection__arrow {
+    margin-top: 25px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered:after {
+    content: " *";
+    color: $color_gold;
+}
+
 @media (max-width: 1169px) {
     .inner {
         width: auto;

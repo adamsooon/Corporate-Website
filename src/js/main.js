@@ -32,16 +32,16 @@
                 $('.header-top').addClass('active');
             }
             /*The menu screen will be blocked on mobile phones*/
-            if(screen.width < 640){
+            if (screen.width < 640) {
                 $('body').toggleClass('menu-block');
-             }
+            }
         });
-       
+
         $('body').on('click', function() {
             $('.header-top').removeClass('active');
-            if(screen.width < 640){
+            if (screen.width < 640) {
                 $('body').toggleClass('menu-block');
-             }
+            }
         });
 
 
@@ -75,6 +75,11 @@
             });
         }
 
+        if ($('.contact-page-form--service').length) {
+            $('.contact-page-form--service').select2({
+                
+            });
+        }
 
         window.CHANGE_ME.init();
     });
