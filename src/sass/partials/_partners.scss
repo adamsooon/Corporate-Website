@@ -17,7 +17,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 195px;
+            width: calc(100%/6.001);
             height: 100%;
             border-right: 1px solid;
             &:last-child {
@@ -43,7 +43,7 @@
         justify-content: flex-start;
         &__box,
         &__box2 {
-            width: calc(100%/6);
+            width: calc(100%/6.001);
             height: 178px;
         }
         &__box {
