@@ -94,6 +94,9 @@ h5 {
     content: " *";
     color: $color_gold;
 }
+.select2-selection:focus{
+    outline: none;
+}
 
 @media (max-width: 1169px) {
     .inner {

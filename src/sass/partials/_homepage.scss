@@ -8,6 +8,12 @@
     &--subtitle {
         padding-bottom: 10px;
     }
+    .bx-wrapper{
+        margin-bottom: 10px;
+    }
+    .bx-controls{
+        margin-top: 48px;
+    }
 }
 
 .testimonials {
@@ -23,23 +29,26 @@
     &__item3 {
         list-style: none;
         max-width: 330px;
-        padding-top: 30px;
+        padding-top: 40px;
         color: #585858;
     }
     &__item1 {
         background: url(../img/Home/quote1.png) no-repeat;
+        background-position: 0 10px;
     }
     &__item2 {
         background: url(../img/Home/quote2.png) no-repeat;
+        background-position: 0 10px;
     }
     &__item3 {
         background: url(../img/Home/quote3.png) no-repeat;
+        background-position: 0 10px;
     }
 }
 
 .person {
     display: flex;
-    padding-top: 40px;
+    padding-top: 44px;
     &__content {
         display: flex;
         flex-direction: column;
@@ -114,7 +123,7 @@
         }
     }
     &__blog--content {
-        padding-right: 59px;
+        padding-right: 36px;
     }
     &__post {
         flex: 1 1;
@@ -123,26 +132,28 @@
         }
     }
     &__blog {
-        :last-child {
-            border-bottom: 0;
-        }
+        
         &--item {
             padding-bottom: 30px;
-            margin-bottom: 24px;
+            margin-bottom: 35px;
             border-bottom: 1px solid;
             list-style: none;
+            &:last-child {
+                border-bottom: 0;
+                margin-bottom: 22px;
+            }
         }
         &--title {
             font: 900 16px/24px 'Raleway';
             letter-spacing: 0.1em;
-            padding-bottom: 10px;
+            padding-bottom: 7px;
         }
         &--content {
             font: 400 14px/28px 'Open Sans';
             color: #585858;
         }
         &--date {
-            padding-bottom: 15px;
+            padding-bottom: 7px;
             font: 400 12px/18px 'Open Sans';
             color: $color_gold;
         }

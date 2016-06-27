@@ -4,7 +4,7 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        padding-top: 60px;
+        padding-top: 53px;
         &__item {
             position: relative;
             display: flex;
@@ -23,8 +23,8 @@
                 text-transform: uppercase;
             }
             &--text {
-                font: 400 16px/28px 'Open Sans';
-                padding-bottom: 60px;
+                font: 400 14px/28px 'Open Sans';
+                padding-bottom: 45px;
             }
             &:hover {
                 .services__list--icon {
@@ -40,13 +40,17 @@
                 }
             }
         }
+        
         &--icon {
             font-size: 55px;
-            padding-right: 30px;
+            padding-right: 50px;
         }
         [class*=" icon-"]:before {
             margin: 0;
         }
+    }
+    .btn--border{
+        margin-top: 20px;
     }
 }
 

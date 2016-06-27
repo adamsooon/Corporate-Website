@@ -1,6 +1,9 @@
 .address{
+	&--title{
+		padding-bottom: 6px;
+	}
 	&--subtitle{
-		padding-bottom: 60px;
+		padding-bottom: 34px;
 	}
 	&__content{
 		display: flex;
