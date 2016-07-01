@@ -33,7 +33,7 @@
             }
             /*The menu screen will be blocked on mobile phones*/
             if (screen.width < 640) {
-                $('body').addClass('menu-block');
+                $('body').toggleClass('menu-block');
             }
         });
 
