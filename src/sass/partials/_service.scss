@@ -17,13 +17,13 @@
             &:hover {
                 box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.4);
             }
-            &--title {
+            &__title {
                 padding-bottom: 24px;
                 font: 800 16px/24px 'Raleway';
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
             }
-            &--text {
+            &__text {
                 padding-bottom: 44px;
             }
         }

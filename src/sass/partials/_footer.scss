@@ -1,157 +1,156 @@
 /* footer styles */
 
-.footer{
-	background: #2a2b2c;
-	color: #7b7b7c;
-	>.inner{
-		padding: 84px 15px; 
-	}
-	&__list{
-		display: flex;
-		&--title{
-			font: 700 18px/24px 'Raleway';
-			text-transform: uppercase;
-			color: $color_white;
-		}
-		&__media{
-			width: 390px;
-			padding-top: 45px;
-			padding: 45px 0 0 15px;
-			&--copy{
-				font: 400 13px/24px 'Karla';
-				letter-spacing: -0.05em;
-			}
-			&__box{
-				display: flex;
-				padding-top: 40px;
-				&--icon{
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					width: 29px;
-					height: 29px;
-					margin-right: 10px;
-					border: 1px solid;
-					i{
-						color: #7b7b7c;;
-						&:hover{
-							color: $color_gold;
-						}
-					}
-				}
-			}
-		}
-		&__navigation{
-			width: 293px;
-			padding-left: 15px;
-		}
-		&__contact{
-			width: 487px;
-			padding: 0 15px;
-		}
-	}
-	li{
-		list-style: none;
-
-	}
+.footer {
+    background: #2a2b2c;
+    color: #7b7b7c;
+    >.inner {
+        padding: 84px 15px;
+    }
+    &__list {
+        display: flex;
+        &__title {
+            font: 700 18px/24px 'Raleway';
+            text-transform: uppercase;
+            color: $color_white;
+        }
+        &__media {
+            width: 390px;
+            padding-top: 45px;
+            padding: 45px 0 0 15px;
+            &__copy {
+                font: 400 13px/24px 'Karla';
+                letter-spacing: -0.05em;
+            }
+            &__box {
+                display: flex;
+                padding-top: 40px;
+                &__icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 29px;
+                    height: 29px;
+                    margin-right: 10px;
+                    border: 1px solid;
+                    i {
+                        color: #7b7b7c;
+                        ;
+                        &:hover {
+                            color: $color_gold;
+                        }
+                    }
+                }
+            }
+        }
+        &__navigation {
+            width: 293px;
+            padding-left: 15px;
+        }
+        &__contact {
+            width: 487px;
+            padding: 0 15px;
+        }
+    }
+    li {
+        list-style: none;
+    }
 }
-.footer__menu{
-	padding-top: 25px;
-	&__item{
-		max-width: 165px;
-		border-bottom: 1px solid;
-		&:hover{
-			color: $color_gold;
-			a{
-				color: inherit;
-			}
-		}
-		&:last-child{
-			border: 0;
-		}
-		&:before{
-			content: '\e80a';
-			font-family: "fontello";
-    		font-style: normal;
-    		font-weight: normal;
-			color: $color_gold;
-		}
-		&--a{
-			padding-left: 20px;
-			font: 600 16px/39px 'Open Sans';
-			letter-spacing: -0.075em;
-			cursor: pointer;
-			color: #7b7b7c;
-			
-		}
 
-	}
+.footer__menu {
+    padding-top: 25px;
+    &__item {
+        max-width: 165px;
+        border-bottom: 1px solid;
+        &:hover {
+            color: $color_gold;
+            a {
+                color: inherit;
+            }
+        }
+        &:last-child {
+            border: 0;
+        }
+        &:before {
+            content: '\e80a';
+            font-family: "fontello";
+            font-style: normal;
+            font-weight: normal;
+            color: $color_gold;
+        }
+        &--a {
+            padding-left: 20px;
+            font: 600 16px/39px 'Open Sans';
+            letter-spacing: -0.075em;
+            cursor: pointer;
+            color: #7b7b7c;
+        }
+    }
 }
-@media (max-width: 1000px){
-	.footer{
-		&__list{
-     		flex-wrap: wrap;
-     		&__media{
-     			width: 100%;
-    			padding: 0;
-    			display: flex;
-    			flex-direction: column;
-    			align-items: center;
-    			order: 3;
-    			&__box{
-    				padding-top: 20px;
-    			}
-     		}
-     		&--title{
-     			text-align: center;
-     		}
-     		&__navigation{
-     			width: 100%;
-    			padding: 0;
-     		}
 
-     	}
-     	&__menu{
-     		&__item{
-     			border:0;
-     		}
-     	}
-	}
+@media (max-width: 1000px) {
+    .footer {
+        &__list {
+            flex-wrap: wrap;
+            &__media {
+                width: 100%;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                order: 3;
+                &__box {
+                    padding-top: 20px;
+                }
+            }
+            &--title {
+                text-align: center;
+            }
+            &__navigation {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        &__menu {
+            &__item {
+                border: 0;
+            }
+        }
+    }
 }
+
 @media (min-width: 640px) and (max-width: 1000px) {
-     .footer{
-     	>.inner{
-     		padding: 42px 15px;
-     	}
-     	&__list{
-     		flex-wrap: wrap;
-     		
-     		&__contact{
-     			width: 100%;
-    			padding: 42px 0;
-     		}
-     		
-     	}
-     	&__menu{
-     		display: flex;
-    		flex-wrap: wrap;
-    		justify-content: space-around;
-    	}
-     }
-   }
+    .footer {
+        >.inner {
+            padding: 42px 15px;
+        }
+        &__list {
+            flex-wrap: wrap;
+            &__contact {
+                width: 100%;
+                padding: 42px 0;
+            }
+        }
+        &__menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}
 
-   @media (min-width: 300px) and (max-width: 639px) {
-   	.footer{
-   		&__list{
-   			&__media{
-   				padding-top: 24px;
-   			}
-   			&__contact{
-    			margin: 0 auto;
-   			}
-   		}
-   		&__menu{
-   			padding: 25px 15px;;
-   		}
-   	}
-   }
+@media (min-width: 300px) and (max-width: 639px) {
+    .footer {
+        &__list {
+            &__media {
+                padding-top: 24px;
+            }
+            &__contact {
+                margin: 0 auto;
+            }
+        }
+        &__menu {
+            padding: 25px 15px;
+            ;
+        }
+    }
+}

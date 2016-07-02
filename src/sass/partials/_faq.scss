@@ -28,7 +28,7 @@
                 z-index: -1;
                 transform: rotate(45deg);
             }
-            &--title {
+            &__title {
                 padding-bottom: 15px;
                 font: 800 16px/24px 'Raleway';
                 letter-spacing: 0.1em;
@@ -44,7 +44,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        &--subtitle {
+        &__subtitle {
             padding-bottom: 21px;
         }
     }
@@ -64,7 +64,7 @@
                     top: 35px;
                     left: 44%;
                 }
-                &--title {
+                &__title {
                     text-align: center;
                 }
             }

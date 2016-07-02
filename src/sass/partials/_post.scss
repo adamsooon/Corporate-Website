@@ -9,21 +9,21 @@
     &__head {
         display: flex;
         padding: 30px 0;
-        &--title {
+        &__title {
             font: 800 18px/24px 'Raleway';
         }
-        &--data {
+        &__data {
             font: 600 13px/24px 'Open Sans';
             text-transform: uppercase;
         }
     }
     &__content {
         padding-left: 98px;
-        &--title {
+        &__title {
             font: 800 16px/24px 'Raleway';
             letter-spacing: 0.05em;
         }
-        &--text {
+        &__text {
             margin-bottom: 48px;
             font: 400 14px/28px 'Raleway';
         }
@@ -32,19 +32,19 @@
             margin: 0 0 48px 97px;
             padding: 18px 67px 18px 40px;
             border-left: 5px solid $color_gold;
-            &--text {
+            &__text {
                 font: 400 italic 15px/28px 'Lora';
             }
         }
         &__media {
             display: flex;
-            &--text {
+            &__text {
                 align-self: center;
                 font: 400 14px/28px 'Open Sans';
                 letter-spacing: 0.05em;
             }
         }
-        &--photo {
+        &__photo {
             margin-bottom: 48px;
         }
     }
@@ -61,7 +61,7 @@
             padding: 37px 99px 37px 36px;
             background: #36a8ff;
             color: #fff;
-            .post__content--text {
+            .post__content__text {
                 margin-bottom: 0;
             }
             &:before {
@@ -84,7 +84,7 @@
 }
 
 .media {
-    &--link {
+    &__link {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -92,19 +92,19 @@
         height: 52px;
         margin-left: 10px;
         border-radius: 50%;
+        &--facebook {
+            background: #496fa5;
+        }
+        &--twitter {
+            background: #00baef;
+        }
+        &--gplus {
+            background: #eb4125;
+        }
         span {
             color: white;
             font-size: 21px;
         }
-    }
-    &--facebook {
-        background: #496fa5;
-    }
-    &--twitter {
-        background: #00baef;
-    }
-    &--gplus {
-        background: #eb4125;
     }
 }
 
@@ -128,10 +128,10 @@
     flex: 1 1;
     margin-left: 50px;
     padding: 0 82px 0 0;
-    &--title {
+    &__title {
         font: 700 13px/24px 'Raleway';
     }
-    &--link {
+    &__link {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -163,7 +163,7 @@
 }
 
 @media (max-width: 1000px) {
-    .post__footer--photo {
+    .post__footer__photo {
         align-self: center;
     }
 }
@@ -201,7 +201,7 @@
                     left: 47%;
                 }
             }
-            &--photo {
+            &__photo {
                 margin-bottom: 25px
             }
         }
@@ -210,7 +210,7 @@
         &__comments {
             &__item {
                 flex-direction: column;
-                &--photo {
+                &__photo {
                     margin: 0 auto;
                 }
             }
@@ -220,7 +220,7 @@
         margin-left: 0;
         padding: 0;
         padding-top: 10px;
-        &--title {
+        &__title {
             text-align: center;
         }
     }

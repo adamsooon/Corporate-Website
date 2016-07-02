@@ -6,7 +6,7 @@
         justify-content: center;
         align-items: center;
     }
-    &--title {
+    &__title {
         font: 900 72px/72px 'Open Sans';
         letter-spacing: 0.005em;
         text-transform: uppercase;
@@ -16,7 +16,7 @@
             color: #36a8ff;
         }
     }
-    &--message {
+    &__message {
         display: inline-block;
         padding: 10px 25px;
         font: 600 12px/24px 'Raleway';

@@ -2,7 +2,7 @@
     >.inner {
         display: flex;
     }
-    &--text {
+    &__text {
         padding-top: 30px;
     }
 }
@@ -29,13 +29,13 @@
 }
 
 .position {
-    &--category {
+    &__category {
         margin-right: 97px;
         width: 97px;
         font: 500 15px/24px 'Raleway';
         text-transform: uppercase;
     }
-    &--description {
+    &__description {
         flex: 1 1;
         font: 400 14px/28px 'Open Sans';
     }
@@ -44,7 +44,7 @@
         justify-content: space-between;
         height: 100px;
         align-items: center;
-        &--title {
+        &__title {
             font: 800 16px/24px 'Raleway';
             text-transform: uppercase;
         }
@@ -119,7 +119,7 @@
                 padding-right: 27px;
             }
         }
-        &--category {
+        &__category {
             margin-right: 67px;
         }
     }
@@ -135,7 +135,7 @@
                 padding-right: 15px;
             }
         }
-        &--category {
+        &__category {
             margin-right: 50px;
         }
     }

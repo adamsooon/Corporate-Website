@@ -14,11 +14,11 @@
             }
             &__content {
                 flex: 1 1;
-                &--title {
+                &__title {
                     font: 800 16px/24px 'Raleway';
                     letter-spacing: 0.1em;
                 }
-                &--text {
+                &__text {
                     font: 400 14px/28px 'Open Sans';
                 }
             }

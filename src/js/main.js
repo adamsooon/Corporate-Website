@@ -75,8 +75,8 @@
             });
         }
 
-        if ($('.contact-page-form--service').length) {
-            $('.contact-page-form--service').select2();
+        if ($('.contact-page-form__service').length) {
+            $('.contact-page-form__service').select2();
         }
 
         window.CHANGE_ME.init();

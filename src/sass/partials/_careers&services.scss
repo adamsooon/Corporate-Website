@@ -16,13 +16,13 @@
             &:nth-child(even) {
                 padding-left: 14px;
             }
-            &--title {
+            &__title {
                 padding: 10px 0;
                 font: 800 16px/24px 'Raleway';
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
             }
-            &--text {
+            &__text {
                 font: 400 14px/28px 'Open Sans';
                 padding-bottom: 45px;
             }

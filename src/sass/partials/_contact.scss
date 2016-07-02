@@ -1,8 +1,8 @@
 .address{
-	&--title{
+	&__title{
 		padding-bottom: 6px;
 	}
-	&--subtitle{
+	&__subtitle{
 		padding-bottom: 34px;
 	}
 	&__content{
@@ -24,7 +24,7 @@
 			background: #36a8ff;
 		}
 	}
-	&--address{
+	&__address{
 		&:before{
 			position: absolute;
 			content: '\e810';
@@ -35,11 +35,11 @@
   			transform: translate(-45px,12px);
 		}
 	}
-	&--address, &--email{
+	&__address, &--email{
 		position: relative;
 		font: 400 16px/24px 'Raleway';
 	}
-	&--telephone{
+	&__telephone{
 		position: relative;
 		font: 400 16px/24px 'Open Sans';
 		padding: 40px 0;
@@ -53,7 +53,7 @@
   			transform: translate(-45px,12px);
 		}
 	}
-	&--email{
+	&__email{
 		&:before{
 			position: absolute;
 			content: '\e807';

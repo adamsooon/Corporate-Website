@@ -1,5 +1,5 @@
 .about {
-    &--text {
+    &__text {
         padding-top: 20px;
     }
     &__box {
@@ -18,31 +18,22 @@
             list-style: none;
         }
     }
-}
-
-.about__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    li {
-        list-style: none;
-    }
-    &__introduction {
-        padding-bottom: 80px;
-        &--title {
-            font: 800 30px/24px 'Raleway';
-            letter-spacing: 0.075em;
-            text-transform: uppercase;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+            list-style: none;
         }
-        &--subtitle {
-            font: 400 italic 16px/30px 'Lora';
+        &__introduction {
+            padding-bottom: 80px;
         }
-    }
-    &__info {
-        max-width: 645px;
-        &--text {
-            margin-bottom: 23px;
-            font: 400 14px/28px 'Open Sans';
+        &__info {
+            max-width: 645px;
+            &__text {
+                margin-bottom: 23px;
+                font: 400 14px/28px 'Open Sans';
+            }
         }
     }
 }

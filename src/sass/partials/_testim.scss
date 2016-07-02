@@ -2,7 +2,7 @@
     &__bottom {
         display: flex;
     }
-    &--subtitle {
+    &__subtitle {
         padding-bottom: 33px;
     }
     &__list {
@@ -30,7 +30,7 @@
                 padding: 50px 50px 37px 59px;
                 border: 1px solid #dfe5ea;
                 background: #ffffff;
-                &--opinion {
+                &__opinion {
                     position: relative;
                     color: #585858;
                     &:before {
@@ -56,12 +56,12 @@
                         color: #1c1c1c;
                     }
                 }
-                &--author {
+                &__author {
                     font: 700 13px/24px 'Raleway';
                     letter-spacing: 0.075em;
                     padding-top: 20px;
                 }
-                &--designation {
+                &__designation {
                     font: 400 14px/28px 'Open Sans';
                     color: $color_gold;
                 }
@@ -81,7 +81,7 @@
                 &__content {
                     margin-left: 0;
                 }
-                &--photo {
+                &__photo {
                     img {
                         margin: 0 auto;
                     }

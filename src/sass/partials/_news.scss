@@ -14,7 +14,7 @@
             }
             &:nth-child(even) {
                 background: #eaeff3;
-                .news__list__item--date {
+                .news__list__item__date {
                     &:before {
                         border-color: transparent transparent transparent #eaeff3;
                     }
@@ -25,7 +25,7 @@
                     padding-top: 0;
                 }
             }
-            &--date {
+            &__date {
                 display: flex;
                 align-items: center;
                 position: relative;
@@ -46,7 +46,7 @@
                     left: 0;
                 }
             }
-            &--title {
+            &__title {
                 font: 800 16px/24px 'Raleway';
                 padding-bottom: 20px;
                 color: #1c1c1c;
@@ -82,7 +82,7 @@
         margin-top: 60px;
         background: #d1ebff;
         border-left: 5px solid #36a8ff;
-        &--text {
+        &__text {
             padding: 30px 82px 30px 56px;
             font-style: italic;
         }

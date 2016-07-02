@@ -31,17 +31,17 @@ textarea {
     position: relative;
     width: 100%;
     padding-top: 35px;
-    &--name {
+    &__name {
         border: 0;
         border-left: 1px solid #7b7b7c;
         border-right: 1px solid #7b7b7c;
     }
-    &--email {
+    &__email {
         border: 0;
         border-right: 1px solid #7b7b7c;
     }
-    &--name,
-    &--email {
+    &__name,
+    &__email {
         width: 100%;
         height: 48px;
         margin: 0;
@@ -50,7 +50,7 @@ textarea {
         color: #7b7b7c;
         background: transparent;
     }
-    &--message {
+    &__message {
         width: 100%;
         height: 97px;
         margin-bottom: 12px;
@@ -60,15 +60,15 @@ textarea {
         color: #7b7b7c;
         background: transparent;
     }
-    &--name:focus + label,
-    &--email:focus + label,
-    &--message:focus + label {
+    &__name:focus + label,
+    &__email:focus + label,
+    &__message:focus + label {
         color: transparent;
         span {
             color: transparent;
         }
     }
-    &--label {
+    &__label {
         position: absolute;
         padding: 15px 0 0 21px;
         span {
@@ -115,9 +115,9 @@ textarea {
         display: flex;
         flex-direction: column;
         flex: 1 1;
-        &--name,
-        &--email,
-        &--phone {
+        &__name,
+        &__email,
+        &__phone {
             max-width: 555px;
             height: 45px;
             margin-bottom: 20px;
@@ -129,7 +129,7 @@ textarea {
     }
     &__content {
         margin-left: 30px;
-        &--comment {
+        &__comment {
             width: 555px;
             height: 177px;
             margin-bottom: 20px;
@@ -146,7 +146,7 @@ textarea {
         }
         &__content {
             margin-left: 0;
-            &--comment {
+            &__comment {
                 width: 100%;
             }
         }
@@ -157,7 +157,7 @@ textarea {
     width: 100%;
     margin-bottom: 62px;
     text-align: center;
-    &--search {
+    &__search {
         width: 703px;
         height: 47px;
         border: 0;
@@ -168,7 +168,7 @@ textarea {
 
 @media (max-width: 1000px) {
     .form-faq {
-        &--search {
+        &__search {
             width: 82%;
         }
     }
@@ -180,17 +180,17 @@ textarea {
 .contact-page-form,
 .blog-page-form {
     background: #eaeff3;
-    &--name,
-    &--email,
-    &--phone,
-    &--service {
+    &__name,
+    &__email,
+    &__phone,
+    &__service {
         width: 100%;
         height: 75px;
         border: 0;
         border-bottom: 1px solid #dfe5ea;
         background: transparent;
     }
-    &--message {
+    &__message {
         width: 100%;
         height: 295px;
         border: 0;
@@ -198,8 +198,8 @@ textarea {
         border-bottom: 1px solid #dfe5ea;
         background: transparent;
     }
-    .form-contact--label,
-    .form-blog--label {
+    .form-contact__label,
+    .form-blog__label {
         position: absolute;
         padding: 0;
         left: 0;
@@ -213,11 +213,11 @@ textarea {
             color: transparent;
         }
     }
-    &--name:focus + label,
-    &--email:focus + label,
-    &--message:focus + label,
-    &--service:focus + label,
-    &--phone:focus + label {
+    &__name:focus + label,
+    &__email:focus + label,
+    &__message:focus + label,
+    &__service:focus + label,
+    &__phone:focus + label {
         color: transparent;
         span {
             color: transparent;
@@ -228,7 +228,7 @@ textarea {
 .message-box {
     position: relative;
     padding-top: 30px;
-    .form-contact--label {
+    .form-contact__label {
         position: absolute;
         top: 50px;
     }
@@ -239,8 +239,8 @@ textarea {
 }
 
 @media (max-width: 639px) {
-    .contact-page-form--message,
-    .blog-page-form--message js-label-hide {
+    .contact-page-form__message,
+    .blog-page-form__message js-label-hide {
         height: 230px;
     }
 }
